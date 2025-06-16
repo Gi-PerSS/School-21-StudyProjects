@@ -1,0 +1,9 @@
+<map id="s21::ParserModel::addObserver" name="s21::ParserModel::addObserver">
+<area shape="rect" id="Node000001" title="Добавляет наблюдателя для уведомления об изменениях модели." alt="" coords="484,31,708,56"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1GLView.html#a71f9d0f0478203c3eb9a02e0b1cb8d62" title="Конструктор класса GLView с привязкой к модели." alt="" coords="274,5,430,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="470,33,430,29,430,23,471,28"/>
+<area shape="rect" id="Node000003" href="$classs21_1_1GLView.html#a233227d12246df1826d1863ecd229bda" title="Устанавливает модель данных для отрисовки." alt="" coords="268,55,436,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="471,58,436,62,436,56,470,53"/>
+<area shape="rect" id="Node000004" href="$classs21_1_1MainViewer.html#af2754b37b6886ce62f156cd2525276ea" title="Конструктор класса MainViewer." alt="" coords="5,55,220,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="254,70,220,70,220,65,254,65"/>
+</map>

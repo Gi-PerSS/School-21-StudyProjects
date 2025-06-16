@@ -1,0 +1,5 @@
+<map id="s21::ParserModel::moveY" name="s21::ParserModel::moveY">
+<area shape="rect" id="Node000001" title="Перемещает модель по оси Y." alt="" coords="224,13,411,38"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1MoveYCommand.html#a187ccb6e08a47b4d90451625793a7126" title="Выполняет перемещение модели по оси Y." alt="" coords="5,5,176,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,28,176,28,176,23,210,23"/>
+</map>

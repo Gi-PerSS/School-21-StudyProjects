@@ -1,0 +1,9 @@
+<map id="s21::GLView::wheelEvent" name="s21::GLView::wheelEvent">
+<area shape="rect" id="Node000001" title="Обрабатывает вращение колеса мыши." alt="" coords="5,13,189,38"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1ScaleCommand.html#a6cb017c8169ffd2cf5c0d40eee4b80c0" title="Выполняет масштабирование модели." alt="" coords="237,5,400,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,23,224,23,224,28,190,28"/>
+<area shape="rect" id="Node000003" href="$classs21_1_1ParserModel.html#aabcc508a5d37e8eca49cfe9278ca5051" title="Масштабирует модель." alt="" coords="448,13,623,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="400,23,435,23,435,28,400,28"/>
+<area shape="rect" id="Node000004" href="$classs21_1_1ParserModel.html#ae8dfc0dc5f1ba4a99f294d02c89e1e0c" title="Уведомляет всех наблюдателей об изменении данных модели." alt="" coords="671,5,849,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="623,23,657,23,657,28,623,28"/>
+</map>

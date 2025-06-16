@@ -1,0 +1,7 @@
+<map id="s21::GLView::rotationChanged" name="s21::GLView::rotationChanged">
+<area shape="rect" id="Node000001" title="Сигнал для уведомления об изменении углов вращения." alt="" coords="279,31,495,56"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1MainViewer.html#af2754b37b6886ce62f156cd2525276ea" title="Конструктор класса MainViewer." alt="" coords="11,5,225,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="265,35,225,31,226,25,265,29"/>
+<area shape="rect" id="Node000003" href="$classs21_1_1GLView.html#a2ea349febe7c9487e91d6fe57f9423e4" title="Обрабатывает движение мыши." alt="" coords="5,55,231,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="265,57,231,60,231,55,264,52"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="s21::ParserModel::scale" name="s21::ParserModel::scale">
+<area shape="rect" id="Node000001" title="Масштабирует модель." alt="" coords="448,13,623,38"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1ScaleCommand.html#a6cb017c8169ffd2cf5c0d40eee4b80c0" title="Выполняет масштабирование модели." alt="" coords="237,5,400,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="434,28,400,28,400,23,434,23"/>
+<area shape="rect" id="Node000003" href="$classs21_1_1GLView.html#ab690c22b8112ad9c6a3ba1e77ff6192d" title="Обрабатывает вращение колеса мыши." alt="" coords="5,13,189,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="224,28,190,28,190,23,224,23"/>
+</map>

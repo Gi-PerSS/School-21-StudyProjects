@@ -1,0 +1,17 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="Node000000" href="$classs21_1_1Command.html" title="Абстрактный базовый класс для всех команд." alt="" coords="5,153,125,179"/>
+<area shape="rect" id="Node000001" href="$classs21_1_1MoveXCommand.html" title="Команда для перемещения модели по оси X." alt="" coords="177,5,341,31"/>
+<area shape="poly" id="edge3_Node000000_Node000001" title=" " alt="" coords="79,140,117,89,143,63,172,40,195,28,198,33,175,44,146,67,121,93,83,143"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1MoveYCommand.html" title="Команда для перемещения модели по оси Y." alt="" coords="178,55,341,80"/>
+<area shape="poly" id="edge4_Node000000_Node000002" title=" " alt="" coords="90,142,128,115,172,89,202,78,204,83,174,94,131,119,94,147"/>
+<area shape="rect" id="Node000003" href="$classs21_1_1MoveZCommand.html" title="Команда для перемещения модели по оси Z." alt="" coords="177,104,342,129"/>
+<area shape="poly" id="edge5_Node000000_Node000003" title=" " alt="" coords="128,147,208,127,209,132,130,153"/>
+<area shape="rect" id="Node000004" href="$classs21_1_1RotateXCommand.html" title="Команда для поворота модели вокруг оси X." alt="" coords="174,153,345,179"/>
+<area shape="poly" id="edge6_Node000000_Node000004" title=" " alt="" coords="139,163,174,163,174,169,139,169"/>
+<area shape="rect" id="Node000005" href="$classs21_1_1RotateYCommand.html" title="Команда для поворота модели вокруг оси Y." alt="" coords="174,203,345,228"/>
+<area shape="poly" id="edge7_Node000000_Node000005" title=" " alt="" coords="130,179,209,200,208,205,128,185"/>
+<area shape="rect" id="Node000006" href="$classs21_1_1RotateZCommand.html" title="Команда для поворота модели вокруг оси Z." alt="" coords="173,252,345,277"/>
+<area shape="poly" id="edge8_Node000000_Node000006" title=" " alt="" coords="94,185,131,212,174,237,207,249,205,254,172,242,128,216,91,189"/>
+<area shape="rect" id="Node000007" href="$classs21_1_1ScaleCommand.html" title="Команда для масштабирования модели." alt="" coords="182,301,337,327"/>
+<area shape="poly" id="edge9_Node000000_Node000007" title=" " alt="" coords="84,189,121,238,147,264,175,286,201,299,198,304,172,291,143,268,117,242,79,192"/>
+</map>

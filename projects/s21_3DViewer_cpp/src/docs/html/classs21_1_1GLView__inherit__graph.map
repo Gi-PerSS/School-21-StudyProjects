@@ -1,0 +1,9 @@
+<map id="s21::GLView" name="s21::GLView">
+<area shape="rect" id="Node000001" title="Класс для отрисовки 3D&#45;моделей с использованием OpenGL." alt="" coords="141,139,297,464"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,15,125,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,91,143,171,138,173,90,94"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="150,15,287,81"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="221,95,221,138,216,138,216,95"/>
+<area shape="rect" id="Node000004" href="$classs21_1_1ModelObserver.html" title="Интерфейс для наблюдателей модели." alt="" coords="312,5,464,91"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="355,104,299,186,295,183,350,101"/>
+</map>

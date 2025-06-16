@@ -1,0 +1,967 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>3DViewer v2.0.: Класс s21::GLView</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">3DViewer v2.0.
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>s21</b></li><li class="navelem"><a class="el" href="classs21_1_1GLView.html">GLView</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#signals">Сигналы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="classs21_1_1GLView-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс s21::GLView</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для отрисовки 3D-моделей с использованием OpenGL.  
+ <a href="classs21_1_1GLView.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="view__glview_8h_source.html">view_glview.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:s21::GLView:</div>
+<div class="dyncontent">
+<div class="center"><img src="classs21_1_1GLView__inherit__graph.png" border="0" usemap="#as21_1_1GLView_inherit__map" alt="Inheritance graph"/></div>
+<map name="as21_1_1GLView_inherit__map" id="as21_1_1GLView_inherit__map">
+<area shape="rect" title="Класс для отрисовки 3D&#45;моделей с использованием OpenGL." alt="" coords="141,139,297,464"/>
+<area shape="rect" title=" " alt="" coords="5,15,125,81"/>
+<area shape="poly" title=" " alt="" coords="94,91,143,171,138,173,90,94"/>
+<area shape="rect" title=" " alt="" coords="150,15,287,81"/>
+<area shape="poly" title=" " alt="" coords="221,95,221,138,216,138,216,95"/>
+<area shape="rect" href="classs21_1_1ModelObserver.html" title="Интерфейс для наблюдателей модели." alt="" coords="312,5,464,91"/>
+<area shape="poly" title=" " alt="" coords="355,104,299,186,295,183,350,101"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса s21::GLView:</div>
+<div class="dyncontent">
+<div class="center"><img src="classs21_1_1GLView__coll__graph.png" border="0" usemap="#as21_1_1GLView_coll__map" alt="Collaboration graph"/></div>
+<map name="as21_1_1GLView_coll__map" id="as21_1_1GLView_coll__map">
+<area shape="rect" title="Класс для отрисовки 3D&#45;моделей с использованием OpenGL." alt="" coords="141,139,297,464"/>
+<area shape="rect" title=" " alt="" coords="5,15,125,81"/>
+<area shape="poly" title=" " alt="" coords="94,91,143,171,138,173,90,94"/>
+<area shape="rect" title=" " alt="" coords="150,15,287,81"/>
+<area shape="poly" title=" " alt="" coords="221,95,221,138,216,138,216,95"/>
+<area shape="rect" href="classs21_1_1ModelObserver.html" title="Интерфейс для наблюдателей модели." alt="" coords="312,5,464,91"/>
+<area shape="poly" title=" " alt="" coords="355,104,299,186,295,183,350,101"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
+Сигналы</h2></td></tr>
+<tr class="memitem:aa74cf320f30cc243d8820e2dd44e12ff" id="r_aa74cf320f30cc243d8820e2dd44e12ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1GLView.html#aa74cf320f30cc243d8820e2dd44e12ff">requestFrame</a> (QImage frame)</td></tr>
+<tr class="memdesc:aa74cf320f30cc243d8820e2dd44e12ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал для запроса кадра.  <br /></td></tr>
+<tr class="separator:aa74cf320f30cc243d8820e2dd44e12ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a363bdbbae339eacf815ac466063f9641" id="r_a363bdbbae339eacf815ac466063f9641"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1GLView.html#a363bdbbae339eacf815ac466063f9641">rotationChanged</a> (float x, float y)</td></tr>
+<tr class="memdesc:a363bdbbae339eacf815ac466063f9641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал для уведомления об изменении углов вращения.  <br /></td></tr>
+<tr class="separator:a363bdbbae339eacf815ac466063f9641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a816ea0c0e822ef8f04f3d593d897d9cd" id="r_a816ea0c0e822ef8f04f3d593d897d9cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1GLView.html#a816ea0c0e822ef8f04f3d593d897d9cd">GLView</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a816ea0c0e822ef8f04f3d593d897d9cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса <a class="el" href="classs21_1_1GLView.html" title="Класс для отрисовки 3D-моделей с использованием OpenGL.">GLView</a>.  <br /></td></tr>
+<tr class="separator:a816ea0c0e822ef8f04f3d593d897d9cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f9d0f0478203c3eb9a02e0b1cb8d62" id="r_a71f9d0f0478203c3eb9a02e0b1cb8d62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1GLView.html#a71f9d0f0478203c3eb9a02e0b1cb8d62">GLView</a> (<a class="el" href="classs21_1_1ParserModel.html">ParserModel</a> &amp;model, QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a71f9d0f0478203c3eb9a02e0b1cb8d62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса <a class="el" href="classs21_1_1GLView.html" title="Класс для отрисовки 3D-моделей с использованием OpenGL.">GLView</a> с привязкой к модели.  <br /></td></tr>
+<tr class="separator:a71f9d0f0478203c3eb9a02e0b1cb8d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b32b51cd06704d07ee01a101b2d61c0" id="r_a0b32b51cd06704d07ee01a101b2d61c0"><td class="memItemLeft" align="right" valign="top"><a id="a0b32b51cd06704d07ee01a101b2d61c0" name="a0b32b51cd06704d07ee01a101b2d61c0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~GLView</b> () override=default</td></tr>
+<tr class="memdesc:a0b32b51cd06704d07ee01a101b2d61c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор класса <a class="el" href="classs21_1_1GLView.html" title="Класс для отрисовки 3D-моделей с использованием OpenGL.">GLView</a>. <br /></td></tr>
+<tr class="separator:a0b32b51cd06704d07ee01a101b2d61c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a233227d12246df1826d1863ecd229bda" id="r_a233227d12246df1826d1863ecd229bda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1GLView.html#a233227d12246df1826d1863ecd229bda">setModel</a> (<a class="el" href="classs21_1_1ParserModel.html">ParserModel</a> &amp;model)</td></tr>
+<tr class="memdesc:a233227d12246df1826d1863ecd229bda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает модель данных для отрисовки.  <br /></td></tr>
+<tr class="separator:a233227d12246df1826d1863ecd229bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0332453dd7e0814da8c92bd15d733ebc" id="r_a0332453dd7e0814da8c92bd15d733ebc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1GLView.html#a0332453dd7e0814da8c92bd15d733ebc">setData</a> (const <a class="el" href="structs21_1_1ObjData.html">ObjData</a> &amp;data)</td></tr>
+<tr class="memdesc:a0332453dd7e0814da8c92bd15d733ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает данные модели для отрисовки.  <br /></td></tr>
+<tr class="separator:a0332453dd7e0814da8c92bd15d733ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6715af123db861b9d46277d4fa7f692a" id="r_a6715af123db861b9d46277d4fa7f692a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1GLView.html#a6715af123db861b9d46277d4fa7f692a">applySettings</a> (QColor vertex_color, int vertex_size, int vertex_shape, QColor edge_color, int edge_width, int edge_type, QColor bg_color, bool central_projection)</td></tr>
+<tr class="memdesc:a6715af123db861b9d46277d4fa7f692a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Применяет настройки отображения.  <br /></td></tr>
+<tr class="separator:a6715af123db861b9d46277d4fa7f692a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f300617dbeed40928534c9f104f99d" id="r_ae2f300617dbeed40928534c9f104f99d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1GLView.html#ae2f300617dbeed40928534c9f104f99d">updateAnimation</a> (float angle)</td></tr>
+<tr class="memdesc:ae2f300617dbeed40928534c9f104f99d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновляет состояние анимации.  <br /></td></tr>
+<tr class="separator:ae2f300617dbeed40928534c9f104f99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0696475f236be917fb59308aa91289c" id="r_ad0696475f236be917fb59308aa91289c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1GLView.html#ad0696475f236be917fb59308aa91289c">onModelChanged</a> (const <a class="el" href="structs21_1_1ObjData.html">ObjData</a> &amp;data) override</td></tr>
+<tr class="memdesc:ad0696475f236be917fb59308aa91289c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обрабатывает изменения данных модели.  <br /></td></tr>
+<tr class="separator:ad0696475f236be917fb59308aa91289c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classs21_1_1ModelObserver"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classs21_1_1ModelObserver')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="classs21_1_1ModelObserver.html">s21::ModelObserver</a></td></tr>
+<tr class="memitem:aebee2103de40cfe3f23eb57c063a8723 inherit pub_methods_classs21_1_1ModelObserver" id="r_aebee2103de40cfe3f23eb57c063a8723"><td class="memItemLeft" align="right" valign="top">
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~ModelObserver</b> ()=default</td></tr>
+<tr class="memdesc:aebee2103de40cfe3f23eb57c063a8723 inherit pub_methods_classs21_1_1ModelObserver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Виртуальный деструктор. <br /></td></tr>
+<tr class="separator:aebee2103de40cfe3f23eb57c063a8723 inherit pub_methods_classs21_1_1ModelObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:ab05ba6eaa72c2798af5e8fa2bfd3bac3" id="r_ab05ba6eaa72c2798af5e8fa2bfd3bac3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1GLView.html#ab05ba6eaa72c2798af5e8fa2bfd3bac3">initializeGL</a> () override</td></tr>
+<tr class="memdesc:ab05ba6eaa72c2798af5e8fa2bfd3bac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализирует OpenGL-функции.  <br /></td></tr>
+<tr class="separator:ab05ba6eaa72c2798af5e8fa2bfd3bac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e6473740e35dc9655125041e64f935b" id="r_a6e6473740e35dc9655125041e64f935b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1GLView.html#a6e6473740e35dc9655125041e64f935b">resizeGL</a> (int w, int h) override</td></tr>
+<tr class="memdesc:a6e6473740e35dc9655125041e64f935b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обрабатывает изменение размеров виджета.  <br /></td></tr>
+<tr class="separator:a6e6473740e35dc9655125041e64f935b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c5232b6b8851d6a386b9f2fdcd84c96" id="r_a8c5232b6b8851d6a386b9f2fdcd84c96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1GLView.html#a8c5232b6b8851d6a386b9f2fdcd84c96">paintGL</a> () override</td></tr>
+<tr class="memdesc:a8c5232b6b8851d6a386b9f2fdcd84c96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отрисовывает содержимое виджета OpenGL.  <br /></td></tr>
+<tr class="separator:a8c5232b6b8851d6a386b9f2fdcd84c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef6a5962aa36673999734f6096961d85" id="r_aef6a5962aa36673999734f6096961d85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1GLView.html#aef6a5962aa36673999734f6096961d85">mousePressEvent</a> (QMouseEvent *event) override</td></tr>
+<tr class="memdesc:aef6a5962aa36673999734f6096961d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обрабатывает нажатие кнопки мыши.  <br /></td></tr>
+<tr class="separator:aef6a5962aa36673999734f6096961d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea349febe7c9487e91d6fe57f9423e4" id="r_a2ea349febe7c9487e91d6fe57f9423e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1GLView.html#a2ea349febe7c9487e91d6fe57f9423e4">mouseMoveEvent</a> (QMouseEvent *event) override</td></tr>
+<tr class="memdesc:a2ea349febe7c9487e91d6fe57f9423e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обрабатывает движение мыши.  <br /></td></tr>
+<tr class="separator:a2ea349febe7c9487e91d6fe57f9423e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab690c22b8112ad9c6a3ba1e77ff6192d" id="r_ab690c22b8112ad9c6a3ba1e77ff6192d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1GLView.html#ab690c22b8112ad9c6a3ba1e77ff6192d">wheelEvent</a> (QWheelEvent *event) override</td></tr>
+<tr class="memdesc:ab690c22b8112ad9c6a3ba1e77ff6192d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обрабатывает вращение колеса мыши.  <br /></td></tr>
+<tr class="separator:ab690c22b8112ad9c6a3ba1e77ff6192d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс для отрисовки 3D-моделей с использованием OpenGL. </p>
+<p>Этот класс наследует QOpenGLWidget и реализует интерфейс <a class="el" href="classs21_1_1ModelObserver.html" title="Интерфейс для наблюдателей модели.">ModelObserver</a>. Он отвечает за отрисовку 3D-моделей, обработку событий мыши и колеса, а также применение настроек отображения. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a816ea0c0e822ef8f04f3d593d897d9cd" name="a816ea0c0e822ef8f04f3d593d897d9cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a816ea0c0e822ef8f04f3d593d897d9cd">&#9670;&#160;</a></span>GLView() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">s21::GLView::GLView </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор класса <a class="el" href="classs21_1_1GLView.html" title="Класс для отрисовки 3D-моделей с использованием OpenGL.">GLView</a>. </p>
+<p>Инициализирует виджет OpenGL с базовыми настройками отображения.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Указатель на родительский виджет (по умолчанию nullptr). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a71f9d0f0478203c3eb9a02e0b1cb8d62" name="a71f9d0f0478203c3eb9a02e0b1cb8d62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f9d0f0478203c3eb9a02e0b1cb8d62">&#9670;&#160;</a></span>GLView() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">s21::GLView::GLView </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classs21_1_1ParserModel.html">ParserModel</a> &amp;&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор класса <a class="el" href="classs21_1_1GLView.html" title="Класс для отрисовки 3D-моделей с использованием OpenGL.">GLView</a> с привязкой к модели. </p>
+<p>Инициализирует виджет OpenGL и связывает его с моделью данных.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>Ссылка на объект <a class="el" href="classs21_1_1ParserModel.html" title="Класс для управления данными 3D-модели.">ParserModel</a>, содержащий данные модели. </td></tr>
+    <tr><td class="paramname">parent</td><td>Указатель на родительский виджет (по умолчанию nullptr). </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classs21_1_1GLView_a71f9d0f0478203c3eb9a02e0b1cb8d62_cgraph.png" border="0" usemap="#aclasss21_1_1GLView_a71f9d0f0478203c3eb9a02e0b1cb8d62_cgraph" alt=""/></div>
+<map name="aclasss21_1_1GLView_a71f9d0f0478203c3eb9a02e0b1cb8d62_cgraph" id="aclasss21_1_1GLView_a71f9d0f0478203c3eb9a02e0b1cb8d62_cgraph">
+<area shape="rect" title="Конструктор класса GLView с привязкой к модели." alt="" coords="5,5,161,31"/>
+<area shape="rect" href="classs21_1_1ParserModel.html#af98f846f66e7c5be0b1fbf7b8f99ad7d" title="Добавляет наблюдателя для уведомления об изменениях модели." alt="" coords="209,5,433,31"/>
+<area shape="poly" title=" " alt="" coords="162,15,196,15,196,21,162,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a6715af123db861b9d46277d4fa7f692a" name="a6715af123db861b9d46277d4fa7f692a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6715af123db861b9d46277d4fa7f692a">&#9670;&#160;</a></span>applySettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void s21::GLView::applySettings </td>
+          <td>(</td>
+          <td class="paramtype">QColor&#160;</td>
+          <td class="paramname"><em>vertex_color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vertex_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vertex_shape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QColor&#160;</td>
+          <td class="paramname"><em>edge_color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>edge_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>edge_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QColor&#160;</td>
+          <td class="paramname"><em>bg_color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>central_projection</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Применяет настройки отображения. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vertex_color</td><td>Цвет вершин. </td></tr>
+    <tr><td class="paramname">vertex_size</td><td>Размер вершин. </td></tr>
+    <tr><td class="paramname">vertex_shape</td><td>Форма вершин (0 - нет, 1 - точки, 2 - квадраты). </td></tr>
+    <tr><td class="paramname">edge_color</td><td>Цвет ребер. </td></tr>
+    <tr><td class="paramname">edge_width</td><td>Толщина ребер. </td></tr>
+    <tr><td class="paramname">edge_type</td><td>Тип линий ребер (0 - сплошные, 1 - пунктирные). </td></tr>
+    <tr><td class="paramname">bg_color</td><td>Цвет фона. </td></tr>
+    <tr><td class="paramname">central_projection</td><td>Режим проекции (true - центральная, false - параллельная).</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Обновляет цвета, размеры, типы линий и другие параметры отображения.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vertex_color</td><td>Цвет вершин. </td></tr>
+    <tr><td class="paramname">vertex_size</td><td>Размер вершин. </td></tr>
+    <tr><td class="paramname">vertex_shape</td><td>Форма вершин (0 - нет, 1 - точки, 2 - квадраты). </td></tr>
+    <tr><td class="paramname">edge_color</td><td>Цвет ребер. </td></tr>
+    <tr><td class="paramname">edge_width</td><td>Толщина ребер. </td></tr>
+    <tr><td class="paramname">edge_type</td><td>Тип линий ребер (0 - сплошные, 1 - пунктирные). </td></tr>
+    <tr><td class="paramname">bg_color</td><td>Цвет фона. </td></tr>
+    <tr><td class="paramname">central_projection</td><td>Режим проекции (true - центральная, false - параллельная). </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classs21_1_1GLView_a6715af123db861b9d46277d4fa7f692a_cgraph.png" border="0" usemap="#aclasss21_1_1GLView_a6715af123db861b9d46277d4fa7f692a_cgraph" alt=""/></div>
+<map name="aclasss21_1_1GLView_a6715af123db861b9d46277d4fa7f692a_cgraph" id="aclasss21_1_1GLView_a6715af123db861b9d46277d4fa7f692a_cgraph">
+<area shape="rect" title="Применяет настройки отображения." alt="" coords="5,5,203,31"/>
+<area shape="rect" href="classs21_1_1GLView.html#a6e6473740e35dc9655125041e64f935b" title="Обрабатывает изменение размеров виджета." alt="" coords="251,5,415,31"/>
+<area shape="poly" title=" " alt="" coords="203,15,237,15,237,21,203,21"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="classs21_1_1GLView_a6715af123db861b9d46277d4fa7f692a_icgraph.png" border="0" usemap="#aclasss21_1_1GLView_a6715af123db861b9d46277d4fa7f692a_icgraph" alt=""/></div>
+<map name="aclasss21_1_1GLView_a6715af123db861b9d46277d4fa7f692a_icgraph" id="aclasss21_1_1GLView_a6715af123db861b9d46277d4fa7f692a_icgraph">
+<area shape="rect" title="Применяет настройки отображения." alt="" coords="268,5,465,31"/>
+<area shape="rect" href="classs21_1_1MainViewer.html#af2754b37b6886ce62f156cd2525276ea" title="Конструктор класса MainViewer." alt="" coords="5,5,220,31"/>
+<area shape="poly" title=" " alt="" coords="254,21,220,21,220,15,254,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab05ba6eaa72c2798af5e8fa2bfd3bac3" name="ab05ba6eaa72c2798af5e8fa2bfd3bac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab05ba6eaa72c2798af5e8fa2bfd3bac3">&#9670;&#160;</a></span>initializeGL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void s21::GLView::initializeGL </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Инициализирует OpenGL-функции. </p>
+<p>Включает тест глубины и сглаживание точек для улучшения качества отрисовки. </p>
+
+</div>
+</div>
+<a id="a2ea349febe7c9487e91d6fe57f9423e4" name="a2ea349febe7c9487e91d6fe57f9423e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ea349febe7c9487e91d6fe57f9423e4">&#9670;&#160;</a></span>mouseMoveEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void s21::GLView::mouseMoveEvent </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обрабатывает движение мыши. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Указатель на объект события мыши.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Выполняет команды поворота модели в зависимости от перемещения курсора.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Указатель на объект события мыши. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classs21_1_1GLView_a2ea349febe7c9487e91d6fe57f9423e4_cgraph.png" border="0" usemap="#aclasss21_1_1GLView_a2ea349febe7c9487e91d6fe57f9423e4_cgraph" alt=""/></div>
+<map name="aclasss21_1_1GLView_a2ea349febe7c9487e91d6fe57f9423e4_cgraph" id="aclasss21_1_1GLView_a2ea349febe7c9487e91d6fe57f9423e4_cgraph">
+<area shape="rect" title="Обрабатывает движение мыши." alt="" coords="5,134,231,159"/>
+<area shape="rect" href="classs21_1_1RotateXCommand.html#a65d3818d7390eb30888fe6a17d3060ab" title="Выполняет поворот модели вокруг оси X." alt="" coords="301,5,472,45"/>
+<area shape="poly" title=" " alt="" coords="137,132,199,95,278,55,297,47,299,52,280,60,201,99,140,136"/>
+<area shape="rect" href="classs21_1_1RotateYCommand.html#a0c987cbc188e3aee15924e3d21ca02db" title="Выполняет поворот модели вокруг оси Y." alt="" coords="301,69,472,109"/>
+<area shape="poly" title=" " alt="" coords="178,131,287,108,288,113,179,137"/>
+<area shape="rect" href="classs21_1_1ParserModel.html#a7fc99472fa3b4157fcbb017ac5c29b1c" title="Возвращает текущий угол поворота модели вокруг оси X." alt="" coords="279,134,494,159"/>
+<area shape="poly" title=" " alt="" coords="231,144,266,144,266,149,231,149"/>
+<area shape="rect" href="classs21_1_1ParserModel.html#a9d59dc118d0bfa719893ef496a0d104c" title="Возвращает текущий угол поворота модели вокруг оси Y." alt="" coords="280,183,493,209"/>
+<area shape="poly" title=" " alt="" coords="188,157,304,178,303,183,187,162"/>
+<area shape="rect" href="classs21_1_1GLView.html#a363bdbbae339eacf815ac466063f9641" title="Сигнал для уведомления об изменении углов вращения." alt="" coords="279,233,495,258"/>
+<area shape="poly" title=" " alt="" coords="144,157,204,188,280,219,306,227,304,232,278,224,202,192,141,162"/>
+<area shape="rect" href="classs21_1_1ParserModel.html#a361213f979a693bf5a937cb41ba4d43c" title="Поворачивает модель вокруг оси X." alt="" coords="543,17,732,42"/>
+<area shape="poly" title=" " alt="" coords="472,24,529,25,529,30,472,29"/>
+<area shape="rect" href="classs21_1_1ParserModel.html#ae8dfc0dc5f1ba4a99f294d02c89e1e0c" title="Уведомляет всех наблюдателей об изменении данных модели." alt="" coords="780,39,959,79"/>
+<area shape="poly" title=" " alt="" coords="733,39,767,43,766,48,732,44"/>
+<area shape="rect" href="classs21_1_1ParserModel.html#aa819e1c3009864da64c0ac530c87936c" title="Поворачивает модель вокруг оси Y." alt="" coords="543,70,731,95"/>
+<area shape="poly" title=" " alt="" coords="472,84,529,83,529,88,472,90"/>
+<area shape="poly" title=" " alt="" coords="732,70,766,67,767,72,732,76"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aef6a5962aa36673999734f6096961d85" name="aef6a5962aa36673999734f6096961d85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef6a5962aa36673999734f6096961d85">&#9670;&#160;</a></span>mousePressEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void s21::GLView::mousePressEvent </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обрабатывает нажатие кнопки мыши. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Указатель на объект события мыши.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Сохраняет начальную позицию курсора для последующих вычислений перемещений.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Указатель на объект события мыши. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad0696475f236be917fb59308aa91289c" name="ad0696475f236be917fb59308aa91289c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0696475f236be917fb59308aa91289c">&#9670;&#160;</a></span>onModelChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void s21::GLView::onModelChanged </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structs21_1_1ObjData.html">ObjData</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обрабатывает изменения данных модели. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Структура <a class="el" href="structs21_1_1ObjData.html" title="Структура для хранения данных 3D-модели.">ObjData</a>, содержащая новые данные модели.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Обновляет внутренние данные и перерисовывает виджет.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Структура <a class="el" href="structs21_1_1ObjData.html" title="Структура для хранения данных 3D-модели.">ObjData</a>, содержащая новые данные модели. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="classs21_1_1ModelObserver.html#a0e1baa26e359f309bc24c09545830a69">s21::ModelObserver</a>.</p>
+
+</div>
+</div>
+<a id="a8c5232b6b8851d6a386b9f2fdcd84c96" name="a8c5232b6b8851d6a386b9f2fdcd84c96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c5232b6b8851d6a386b9f2fdcd84c96">&#9670;&#160;</a></span>paintGL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void s21::GLView::paintGL </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отрисовывает содержимое виджета OpenGL. </p>
+<p>Рисует вершины и ребра модели, применяя текущие настройки отображения. </p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classs21_1_1GLView_a8c5232b6b8851d6a386b9f2fdcd84c96_cgraph.png" border="0" usemap="#aclasss21_1_1GLView_a8c5232b6b8851d6a386b9f2fdcd84c96_cgraph" alt=""/></div>
+<map name="aclasss21_1_1GLView_a8c5232b6b8851d6a386b9f2fdcd84c96_cgraph" id="aclasss21_1_1GLView_a8c5232b6b8851d6a386b9f2fdcd84c96_cgraph">
+<area shape="rect" title="Отрисовывает содержимое виджета OpenGL." alt="" coords="5,5,164,31"/>
+<area shape="rect" href="classs21_1_1GLView.html#aa74cf320f30cc243d8820e2dd44e12ff" title="Сигнал для запроса кадра." alt="" coords="212,5,411,31"/>
+<area shape="poly" title=" " alt="" coords="164,15,198,15,198,21,164,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa74cf320f30cc243d8820e2dd44e12ff" name="aa74cf320f30cc243d8820e2dd44e12ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa74cf320f30cc243d8820e2dd44e12ff">&#9670;&#160;</a></span>requestFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void s21::GLView::requestFrame </td>
+          <td>(</td>
+          <td class="paramtype">QImage&#160;</td>
+          <td class="paramname"><em>frame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал для запроса кадра. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>Изображение текущего состояния OpenGL-виджета. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="classs21_1_1GLView_aa74cf320f30cc243d8820e2dd44e12ff_icgraph.png" border="0" usemap="#aclasss21_1_1GLView_aa74cf320f30cc243d8820e2dd44e12ff_icgraph" alt=""/></div>
+<map name="aclasss21_1_1GLView_aa74cf320f30cc243d8820e2dd44e12ff_icgraph" id="aclasss21_1_1GLView_aa74cf320f30cc243d8820e2dd44e12ff_icgraph">
+<area shape="rect" title="Сигнал для запроса кадра." alt="" coords="268,31,467,56"/>
+<area shape="rect" href="classs21_1_1MainViewer.html#af2754b37b6886ce62f156cd2525276ea" title="Конструктор класса MainViewer." alt="" coords="5,5,220,31"/>
+<area shape="poly" title=" " alt="" coords="254,35,220,31,220,26,255,29"/>
+<area shape="rect" href="classs21_1_1GLView.html#a8c5232b6b8851d6a386b9f2fdcd84c96" title="Отрисовывает содержимое виджета OpenGL." alt="" coords="33,55,192,80"/>
+<area shape="poly" title=" " alt="" coords="254,57,192,63,192,57,254,51"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6e6473740e35dc9655125041e64f935b" name="a6e6473740e35dc9655125041e64f935b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e6473740e35dc9655125041e64f935b">&#9670;&#160;</a></span>resizeGL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void s21::GLView::resizeGL </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обрабатывает изменение размеров виджета. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>Новая ширина виджета. </td></tr>
+    <tr><td class="paramname">h</td><td>Новая высота виджета.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Обновляет матрицу проекции в зависимости от текущего режима отображения (центральная или параллельная проекция).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>Новая ширина виджета. </td></tr>
+    <tr><td class="paramname">h</td><td>Новая высота виджета. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="classs21_1_1GLView_a6e6473740e35dc9655125041e64f935b_icgraph.png" border="0" usemap="#aclasss21_1_1GLView_a6e6473740e35dc9655125041e64f935b_icgraph" alt=""/></div>
+<map name="aclasss21_1_1GLView_a6e6473740e35dc9655125041e64f935b_icgraph" id="aclasss21_1_1GLView_a6e6473740e35dc9655125041e64f935b_icgraph">
+<area shape="rect" title="Обрабатывает изменение размеров виджета." alt="" coords="513,5,677,31"/>
+<area shape="rect" href="classs21_1_1GLView.html#a6715af123db861b9d46277d4fa7f692a" title="Применяет настройки отображения." alt="" coords="268,5,465,31"/>
+<area shape="poly" title=" " alt="" coords="499,21,465,21,465,15,499,15"/>
+<area shape="rect" href="classs21_1_1MainViewer.html#af2754b37b6886ce62f156cd2525276ea" title="Конструктор класса MainViewer." alt="" coords="5,5,220,31"/>
+<area shape="poly" title=" " alt="" coords="254,21,220,21,220,15,254,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a363bdbbae339eacf815ac466063f9641" name="a363bdbbae339eacf815ac466063f9641"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a363bdbbae339eacf815ac466063f9641">&#9670;&#160;</a></span>rotationChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void s21::GLView::rotationChanged </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал для уведомления об изменении углов вращения. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Угол поворота вокруг оси X (в градусах). </td></tr>
+    <tr><td class="paramname">y</td><td>Угол поворота вокруг оси Y (в градусах). </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="classs21_1_1GLView_a363bdbbae339eacf815ac466063f9641_icgraph.png" border="0" usemap="#aclasss21_1_1GLView_a363bdbbae339eacf815ac466063f9641_icgraph" alt=""/></div>
+<map name="aclasss21_1_1GLView_a363bdbbae339eacf815ac466063f9641_icgraph" id="aclasss21_1_1GLView_a363bdbbae339eacf815ac466063f9641_icgraph">
+<area shape="rect" title="Сигнал для уведомления об изменении углов вращения." alt="" coords="279,31,495,56"/>
+<area shape="rect" href="classs21_1_1MainViewer.html#af2754b37b6886ce62f156cd2525276ea" title="Конструктор класса MainViewer." alt="" coords="11,5,225,31"/>
+<area shape="poly" title=" " alt="" coords="265,35,225,31,226,25,265,29"/>
+<area shape="rect" href="classs21_1_1GLView.html#a2ea349febe7c9487e91d6fe57f9423e4" title="Обрабатывает движение мыши." alt="" coords="5,55,231,80"/>
+<area shape="poly" title=" " alt="" coords="265,57,231,60,231,55,264,52"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0332453dd7e0814da8c92bd15d733ebc" name="a0332453dd7e0814da8c92bd15d733ebc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0332453dd7e0814da8c92bd15d733ebc">&#9670;&#160;</a></span>setData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void s21::GLView::setData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structs21_1_1ObjData.html">ObjData</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Устанавливает данные модели для отрисовки. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Структура <a class="el" href="structs21_1_1ObjData.html" title="Структура для хранения данных 3D-модели.">ObjData</a>, содержащая вершины и ребра модели. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a233227d12246df1826d1863ecd229bda" name="a233227d12246df1826d1863ecd229bda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a233227d12246df1826d1863ecd229bda">&#9670;&#160;</a></span>setModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void s21::GLView::setModel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classs21_1_1ParserModel.html">ParserModel</a> &amp;&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Устанавливает модель данных для отрисовки. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>Ссылка на объект <a class="el" href="classs21_1_1ParserModel.html" title="Класс для управления данными 3D-модели.">ParserModel</a>, содержащий данные модели.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Если ранее была установлена другая модель, она удаляется из списка наблюдателей.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>Ссылка на объект <a class="el" href="classs21_1_1ParserModel.html" title="Класс для управления данными 3D-модели.">ParserModel</a>, содержащий данные модели. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classs21_1_1GLView_a233227d12246df1826d1863ecd229bda_cgraph.png" border="0" usemap="#aclasss21_1_1GLView_a233227d12246df1826d1863ecd229bda_cgraph" alt=""/></div>
+<map name="aclasss21_1_1GLView_a233227d12246df1826d1863ecd229bda_cgraph" id="aclasss21_1_1GLView_a233227d12246df1826d1863ecd229bda_cgraph">
+<area shape="rect" title="Устанавливает модель данных для отрисовки." alt="" coords="5,35,173,60"/>
+<area shape="rect" href="classs21_1_1ParserModel.html#af98f846f66e7c5be0b1fbf7b8f99ad7d" title="Добавляет наблюдателя для уведомления об изменениях модели." alt="" coords="221,5,445,31"/>
+<area shape="poly" title=" " alt="" coords="173,35,214,30,215,35,174,40"/>
+<area shape="rect" href="classs21_1_1ParserModel.html#a695a43ce1a22bcb79f1ba96b5bc2d0e0" title="Удаляет наблюдателя из списка." alt="" coords="238,55,429,95"/>
+<area shape="poly" title=" " alt="" coords="174,54,225,60,224,65,173,60"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="classs21_1_1GLView_a233227d12246df1826d1863ecd229bda_icgraph.png" border="0" usemap="#aclasss21_1_1GLView_a233227d12246df1826d1863ecd229bda_icgraph" alt=""/></div>
+<map name="aclasss21_1_1GLView_a233227d12246df1826d1863ecd229bda_icgraph" id="aclasss21_1_1GLView_a233227d12246df1826d1863ecd229bda_icgraph">
+<area shape="rect" title="Устанавливает модель данных для отрисовки." alt="" coords="268,5,436,31"/>
+<area shape="rect" href="classs21_1_1MainViewer.html#af2754b37b6886ce62f156cd2525276ea" title="Конструктор класса MainViewer." alt="" coords="5,5,220,31"/>
+<area shape="poly" title=" " alt="" coords="254,21,220,21,220,15,254,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae2f300617dbeed40928534c9f104f99d" name="ae2f300617dbeed40928534c9f104f99d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2f300617dbeed40928534c9f104f99d">&#9670;&#160;</a></span>updateAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void s21::GLView::updateAnimation </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>angle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обновляет состояние анимации. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>Угол поворота в градусах.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Выполняет команду поворота модели вокруг оси Y.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>Угол поворота в градусах. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classs21_1_1GLView_ae2f300617dbeed40928534c9f104f99d_cgraph.png" border="0" usemap="#aclasss21_1_1GLView_ae2f300617dbeed40928534c9f104f99d_cgraph" alt=""/></div>
+<map name="aclasss21_1_1GLView_ae2f300617dbeed40928534c9f104f99d_cgraph" id="aclasss21_1_1GLView_ae2f300617dbeed40928534c9f104f99d_cgraph">
+<area shape="rect" title="Обновляет состояние анимации." alt="" coords="5,13,225,38"/>
+<area shape="rect" href="classs21_1_1RotateYCommand.html#a0c987cbc188e3aee15924e3d21ca02db" title="Выполняет поворот модели вокруг оси Y." alt="" coords="273,5,444,45"/>
+<area shape="poly" title=" " alt="" coords="225,23,260,23,260,28,225,28"/>
+<area shape="rect" href="classs21_1_1ParserModel.html#aa819e1c3009864da64c0ac530c87936c" title="Поворачивает модель вокруг оси Y." alt="" coords="492,13,680,38"/>
+<area shape="poly" title=" " alt="" coords="444,23,479,23,479,28,444,28"/>
+<area shape="rect" href="classs21_1_1ParserModel.html#ae8dfc0dc5f1ba4a99f294d02c89e1e0c" title="Уведомляет всех наблюдателей об изменении данных модели." alt="" coords="728,5,907,45"/>
+<area shape="poly" title=" " alt="" coords="680,23,714,23,714,28,680,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab690c22b8112ad9c6a3ba1e77ff6192d" name="ab690c22b8112ad9c6a3ba1e77ff6192d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab690c22b8112ad9c6a3ba1e77ff6192d">&#9670;&#160;</a></span>wheelEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void s21::GLView::wheelEvent </td>
+          <td>(</td>
+          <td class="paramtype">QWheelEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обрабатывает вращение колеса мыши. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Указатель на объект события колеса мыши.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Выполняет команду масштабирования модели в зависимости от направления вращения колеса.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Указатель на объект события колеса мыши. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classs21_1_1GLView_ab690c22b8112ad9c6a3ba1e77ff6192d_cgraph.png" border="0" usemap="#aclasss21_1_1GLView_ab690c22b8112ad9c6a3ba1e77ff6192d_cgraph" alt=""/></div>
+<map name="aclasss21_1_1GLView_ab690c22b8112ad9c6a3ba1e77ff6192d_cgraph" id="aclasss21_1_1GLView_ab690c22b8112ad9c6a3ba1e77ff6192d_cgraph">
+<area shape="rect" title="Обрабатывает вращение колеса мыши." alt="" coords="5,13,189,38"/>
+<area shape="rect" href="classs21_1_1ScaleCommand.html#a6cb017c8169ffd2cf5c0d40eee4b80c0" title="Выполняет масштабирование модели." alt="" coords="237,5,400,45"/>
+<area shape="poly" title=" " alt="" coords="190,23,224,23,224,28,190,28"/>
+<area shape="rect" href="classs21_1_1ParserModel.html#aabcc508a5d37e8eca49cfe9278ca5051" title="Масштабирует модель." alt="" coords="448,13,623,38"/>
+<area shape="poly" title=" " alt="" coords="400,23,435,23,435,28,400,28"/>
+<area shape="rect" href="classs21_1_1ParserModel.html#ae8dfc0dc5f1ba4a99f294d02c89e1e0c" title="Уведомляет всех наблюдателей об изменении данных модели." alt="" coords="671,5,849,45"/>
+<area shape="poly" title=" " alt="" coords="623,23,657,23,657,28,623,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>headers/<a class="el" href="view__glview_8h_source.html">view_glview.h</a></li>
+<li>sources/<a class="el" href="view__glview_8cpp.html">view_glview.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

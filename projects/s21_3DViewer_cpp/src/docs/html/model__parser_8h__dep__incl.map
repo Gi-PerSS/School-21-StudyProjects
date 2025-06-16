@@ -1,0 +1,30 @@
+<map id="headers/model_parser.h" name="headers/model_parser.h">
+<area shape="rect" id="Node000001" title="Заголовочный файл, содержащий объявления классов для работы с 3D&#45;моделями." alt="" coords="443,5,621,31"/>
+<area shape="rect" id="Node000002" href="$command_8h.html" title="Заголовочный файл, содержащий объявления классов команд для выполнения трансформаций над моделью." alt="" coords="159,79,313,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="472,36,285,81,283,76,471,31"/>
+<area shape="rect" id="Node000003" href="$presenter__mainviewer_8h_source.html" title=" " alt="" coords="303,225,537,251"/>
+<area shape="poly" id="edge15_Node000001_Node000003" title=" " alt="" coords="635,25,747,42,804,54,854,70,894,90,920,115,926,129,926,145,920,161,907,179,889,190,857,198,764,213,538,233,537,228,763,208,856,193,887,185,904,175,915,159,921,144,921,130,915,118,891,95,852,75,802,60,746,47,635,31"/>
+<area shape="rect" id="Node000006" href="$view__glview_8h_source.html" title=" " alt="" coords="273,152,444,177"/>
+<area shape="poly" id="edge16_Node000001_Node000006" title=" " alt="" coords="504,40,448,81,405,120,371,154,368,150,401,116,445,77,501,36"/>
+<area shape="rect" id="Node000009" href="$observer_8h_source.html" title=" " alt="" coords="459,79,605,104"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="535,44,535,79,529,79,529,44"/>
+<area shape="rect" id="Node000010" href="$model__parser_8cpp.html" title="Реализация методов класса ParserModel для работы с 3D&#45;моделями." alt="" coords="702,152,893,177"/>
+<area shape="poly" id="edge17_Node000001_Node000010" title=" " alt="" coords="566,35,778,150,775,154,564,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="240,117,247,147,263,176,282,192,304,205,352,223,350,228,302,210,279,196,259,179,242,149,235,118"/>
+<area shape="rect" id="Node000005" href="$presenter__mainviewer_8cpp.html" title="Реализация класса MainViewer, представляющего главное окно приложения." alt="" coords="5,299,253,324"/>
+<area shape="poly" id="edge9_Node000002_Node000005" title=" " alt="" coords="146,109,69,127,39,140,21,154,12,173,13,193,21,214,36,234,75,270,112,296,109,301,71,274,32,237,17,216,7,194,7,172,17,150,36,135,68,122,145,104"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="269,108,340,149,337,154,266,113"/>
+<area shape="rect" id="Node000008" href="$command_8cpp.html" title="Реализация методов классов команд для выполнения трансформаций над моделью." alt="" coords="31,152,199,177"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="206,113,136,154,133,149,203,109"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html" title="Главный файл приложения, инициализирующий и запускающий графическое окно." alt="" coords="352,299,488,324"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="423,264,423,299,417,299,417,264"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="361,257,177,301,176,296,359,251"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="380,186,412,223,408,227,376,190"/>
+<area shape="rect" id="Node000007" href="$view__glview_8cpp.html" title="Реализация класса GLView для отрисовки 3D&#45;моделей с использованием OpenGL." alt="" coords="95,225,278,251"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="320,185,216,228,214,223,318,180"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="517,117,431,227,427,223,512,113"/>
+<area shape="poly" id="edge12_Node000009_Node000006" title=" " alt="" coords="493,112,388,154,386,149,491,107"/>
+<area shape="poly" id="edge13_Node000009_Node000010" title=" " alt="" coords="589,105,755,149,754,154,587,110"/>
+<area shape="rect" id="Node000011" href="$observer_8cpp.html" title="Реализация компонентов, связанных с паттерном Observer." alt="" coords="519,152,678,177"/>
+<area shape="poly" id="edge14_Node000009_Node000011" title=" " alt="" coords="554,113,590,150,586,154,551,116"/>
+</map>

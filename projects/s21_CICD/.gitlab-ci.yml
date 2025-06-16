@@ -1,0 +1,53 @@
+stages:
+  - part_2_build
+  - part_3_code_style_test
+  - part_4_integration_test
+  - part_5_deploy
+
+artefacts creation:
+  stage: part_2_build
+  script:
+    - rm -f src/cat/s21_cat
+    - rm -f src/grep/s21_grep
+    - cd src/cat && make && cp s21_cat ../../artefacts_here
+    - cd ../grep && make && cp s21_grep ../../artefacts_here
+  artifacts:
+    paths:
+      - artefacts_here
+    expire_in: 1 month
+  after_script:
+    - echo $CI_JOB_STATUS
+    - bash scripts_and_other/t_bot.sh "$CI_JOB_STATUS" "$CI_JOB_NAME" "$CI_JOB_STAGE"
+
+Code style test:
+  stage: part_3_code_style_test
+  script:
+    - find . -iname "*.h" -o -iname "*.c" | xargs clang-format -n -style=Google -Werror
+  after_script:
+    - echo $CI_JOB_STATUS
+    - bash scripts_and_other/t_bot.sh "$CI_JOB_STATUS" "$CI_JOB_NAME" "$CI_JOB_STAGE"
+
+Integration test:
+  stage: part_4_integration_test
+  script:
+    - cd src/cat && make clean &&
+      make test &&
+      cd ../grep && make clean &&
+      make test
+  after_script:
+    - echo $CI_JOB_STATUS
+    - bash scripts_and_other/t_bot.sh "$CI_JOB_STATUS" "$CI_JOB_NAME" "$CI_JOB_STAGE"
+
+Deploy:
+  stage: part_5_deploy
+  dependencies:
+    - "artefacts creation"
+  script:
+    - ssh -i ~/.ssh/id_rsa root@192.168.100.11 "rm -fR /home/t/artefacts_here"
+    - ssh -i ~/.ssh/id_rsa root@192.168.100.11 "rm -fR /usr/local/bin/artefacts_here"
+    - scp -i ~/.ssh/id_rsa -r $(pwd)/artefacts_here t@192.168.100.11:~
+    - ssh -i ~/.ssh/id_rsa root@192.168.100.11 "cp -R /home/t/artefacts_here /usr/local/bin"
+  when: manual # This setting turns a job into a manual one
+  after_script:
+    - echo $CI_JOB_STATUS
+    - bash scripts_and_other/t_bot.sh "$CI_JOB_STATUS" "$CI_JOB_NAME" "$CI_JOB_STAGE"

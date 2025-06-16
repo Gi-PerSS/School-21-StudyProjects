@@ -1,0 +1,5 @@
+<map id="s21::ParserModel::scale" name="s21::ParserModel::scale">
+<area shape="rect" id="Node000001" title="Масштабирует модель." alt="" coords="5,13,180,38"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1ParserModel.html#ae8dfc0dc5f1ba4a99f294d02c89e1e0c" title="Уведомляет всех наблюдателей об изменении данных модели." alt="" coords="228,5,407,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,23,214,23,214,28,180,28"/>
+</map>

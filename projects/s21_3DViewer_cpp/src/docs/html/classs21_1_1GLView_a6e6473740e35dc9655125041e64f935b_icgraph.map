@@ -1,0 +1,7 @@
+<map id="s21::GLView::resizeGL" name="s21::GLView::resizeGL">
+<area shape="rect" id="Node000001" title="Обрабатывает изменение размеров виджета." alt="" coords="513,5,677,31"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1GLView.html#a6715af123db861b9d46277d4fa7f692a" title="Применяет настройки отображения." alt="" coords="268,5,465,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="499,21,465,21,465,15,499,15"/>
+<area shape="rect" id="Node000003" href="$classs21_1_1MainViewer.html#af2754b37b6886ce62f156cd2525276ea" title="Конструктор класса MainViewer." alt="" coords="5,5,220,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="254,21,220,21,220,15,254,15"/>
+</map>

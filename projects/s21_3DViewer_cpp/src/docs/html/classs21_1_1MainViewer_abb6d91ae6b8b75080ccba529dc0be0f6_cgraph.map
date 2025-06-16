@@ -1,0 +1,5 @@
+<map id="s21::MainViewer::~MainViewer" name="s21::MainViewer::~MainViewer">
+<area shape="rect" id="Node000001" title="Деструктор класса MainViewer." alt="" coords="5,13,232,38"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1ParserModel.html#a695a43ce1a22bcb79f1ba96b5bc2d0e0" title="Удаляет наблюдателя из списка." alt="" coords="280,5,471,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,23,266,23,266,28,232,28"/>
+</map>

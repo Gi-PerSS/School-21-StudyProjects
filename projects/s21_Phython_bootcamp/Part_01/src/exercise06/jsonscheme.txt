@@ -1,0 +1,17 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "description": "additionaladditionalProperties - схема позволяет любое количество списков фильмов, не только 2.",
+    "type": "object",
+    "additionalProperties": { 
+        "type": "array",
+            "items": {
+            "type": "object",
+            "required": ["title", "year"],
+            "properties": {
+                "title": { "type": "string" },
+                "year": { "type": "integer" }
+            },
+            "additionalProperties": false
+        }
+    }
+}

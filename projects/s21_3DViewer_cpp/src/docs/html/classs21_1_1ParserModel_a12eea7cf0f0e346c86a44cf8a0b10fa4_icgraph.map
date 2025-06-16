@@ -1,0 +1,5 @@
+<map id="s21::ParserModel::moveZ" name="s21::ParserModel::moveZ">
+<area shape="rect" id="Node000001" title="Перемещает модель по оси Z." alt="" coords="227,13,413,38"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1MoveZCommand.html#ae3952b34ceb960f6fa8481b64661ff1c" title="Выполняет перемещение модели по оси Z." alt="" coords="5,5,179,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,28,179,28,179,23,213,23"/>
+</map>

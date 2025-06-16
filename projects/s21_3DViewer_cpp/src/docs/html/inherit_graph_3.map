@@ -1,0 +1,9 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="Node000000" href="$classs21_1_1ModelObserver.html" title="Интерфейс для наблюдателей модели." alt="" coords="5,5,157,31"/>
+<area shape="rect" id="Node000001" href="$classs21_1_1GLView.html" title="Класс для отрисовки 3D&#45;моделей с использованием OpenGL." alt="" coords="205,55,307,80"/>
+<area shape="poly" id="edge10_Node000000_Node000001" title=" " alt="" coords="141,32,211,52,209,57,139,37"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="9,55,154,80"/>
+<area shape="poly" id="edge11_Node000002_Node000001" title=" " alt="" coords="168,65,205,65,205,70,168,70"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="17,104,145,129"/>
+<area shape="poly" id="edge12_Node000003_Node000001" title=" " alt="" coords="139,98,209,78,211,83,141,103"/>
+</map>

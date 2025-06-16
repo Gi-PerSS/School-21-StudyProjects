@@ -1,53 +1,28 @@
 # School-21-StudyProjects
 
-Учебные проекты, выполненные за 2 года обучения в **Школе 21** — образовательной программе **Сбера**, крупнейшего банка России. Проекты охватывают программирование, DevOps, базы данных и системное администрирование: C, C++, Python, SQL, Linux, Docker и CI/CD.
+Study projects completed over 2 years at **School 21**, an educational program by **Sber**, Russia's largest bank. The projects cover programming, DevOps, databases, and system administration, showcasing skills in C, C++, Python, SQL, Linux, Docker, and CI/CD.
 
-## Проекты
+## Projects
 
-1. **s21_string+**  
-   Реализация библиотеки string.h на C.
+| Project | Description |
+|---------|-------------|
+| [s21_string](projects/s21_string/) | Implementation of the string.h library in C with additional string processing functions. |
+| [s21_matrix_c](projects/s21_matrix_c/) | C library for matrix operations: addition, multiplication, transposition, determinant. |
+| [s21_matrix_cpp](projects/s21_matrix_cpp/) | OOP C++ library for matrix operations with operator overloading. |
+| [s21_decimal](projects/s21_decimal/) | C library for precise decimal calculations, suitable for financial applications. |
+| [s21_SimpleBashUtils](projects/s21_SimpleBashUtils/) | Cat and grep utilities in C, supporting standard Linux flags. |
+| [s21_SmartCalc_c](projects/s21_SmartCalc_c/) | Scientific calculator in C with graphing and financial calculations. |
+| [s21_SmartCalc_cpp](projects/s21_SmartCalc_cpp/) | Scientific calculator in C++ with MVC architecture and financial modules. |
+| [s21_3DViewer_cpp](projects/s21_3DViewer_cpp/) | 3D model viewer in C++ with support for affine transformations. |
+| [s21_SimpleDocker](projects/s21_SimpleDocker/) | Introduction to Docker: container creation, nginx setup, Docker Compose. |
+| [s21_Linux](projects/s21_Linux/) | Linux administration: network setup, user management, SSH, CRON. |
+| [s21_LinuxMonitoring1](projects/s21_LinuxMonitoring1/) | Bash scripts for system and filesystem monitoring on Linux. |
+| [s21_LinuxMonitoring2](projects/s21_LinuxMonitoring2/) | Linux monitoring using Bash, GoAccess, Prometheus, and Grafana. |
+| [s21_CICD](projects/s21_CICD/) | CI/CD pipeline for SimpleBashUtils with GitLab Runner and Telegram notifications. |
+| [s21_Python_bootcamp](projects/s21_Python_bootcamp/) | Python projects: algorithms, data processing, file handling. |
+| [s21_PostgreSQL_bootcamp](projects/s21_PostgreSQL_bootcamp/) | SQL queries and PostgreSQL administration: JOINs, indexes, triggers, transactions. |
 
-2. **s21_matrix**  
-   Библиотека на C для операций с матрицами: сложение, умножение, транспонирование, определитель.
+## About School 21
+School 21 is a free educational program by Sber, Russia's largest bank, designed to train highly skilled IT professionals. Founded in 2018 based on the French École 42 model, it employs a unique peer-to-peer learning approach without teachers, focusing on practical projects and teamwork. The program lasts up to 2–3 years and is open to all who pass the selection process, regardless of prior programming experience. Campuses are located in Moscow, Kazan, Novosibirsk, and other Russian cities.
 
-3. **s21_matrix+**  
-   ООП-библиотека на C++ для операций с матрицами с перегрузкой операторов.
-
-4. **s21_decimal**  
-   Библиотека на C для точных десятичных вычислений.
-
-5. **s21_SimpleBashUtils**  
-   Утилиты cat и grep на C, поддерживающие стандартные флаги Linux.
-
-6. **s21_SmartCalc_c**  
-   Научный калькулятор на C с графиками и финансовыми расчетами.
-
-7. **s21_SmartCalc_cpp**  
-   Научный калькулятор на C++ с MVC-архитектурой и финансовыми модулями.
-
-8. **s21_3DViewer_cpp**  
-   Визуализатор 3D-моделей на C++ с поддержкой аффинных преобразований.
-
-9. **s21_SimpleDocker**  
-   Введение в Docker: создание контейнеров, настройка nginx, Docker Compose.
-
-10. **s21_Linux**  
-    Администрирование Linux: настройка сети, пользователей, SSH, CRON.
-
-11. **s21_LinuxMonitoring1**  
-    Bash-скрипты для мониторинга системы и файловой системы на Linux.
-
-12. **s21_LinuxMonitoring2**  
-    Мониторинг Linux с использованием Bash, GoAccess, Prometheus и Grafana.
-
-13. **s21_CICD**  
-    CI/CD пайплайн для SimpleBashUtils с GitLab Runner и Telegram-уведомлениями.
-
-14. **s21_Python_bootcamp**  
-    Python-проекты: алгоритмы, обработка данных, работа с файлами.
-
-15. **s21_PostgreSQL_bootcamp**  
-    SQL-запросы и администрирование PostgreSQL: JOIN, индексы, триггеры, транзакции.
-
-## О Школе 21
-Школа 21 — бесплатная образовательная программа Сбера, крупнейшего банка России, созданная для подготовки высококвалифицированных IT-специалистов. Основана в 2018 году по модели французской школы École 42, использует уникальную методику peer-to-peer обучения без преподавателей, с акцентом на практические проекты и командную работу. Программа длится до 2–3 лет и доступна для всех, прошедших отбор, независимо от опыта программирования. Кампусы расположены в Москве, Казани, Новосибирске и других городах России.
+[Русская версия README](README_RUS.md)

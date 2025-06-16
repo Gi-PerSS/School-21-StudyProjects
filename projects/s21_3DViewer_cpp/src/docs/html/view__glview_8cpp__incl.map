@@ -1,0 +1,33 @@
+<map id="sources/view_glview.cpp" name="sources/view_glview.cpp">
+<area shape="rect" id="Node000001" title="Реализация класса GLView для отрисовки 3D&#45;моделей с использованием OpenGL." alt="" coords="677,5,860,31"/>
+<area shape="rect" id="Node000002" href="$view__glview_8h_source.html" title=" " alt="" coords="324,79,507,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="712,33,486,79,485,73,711,28"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="531,79,630,104"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="739,33,625,76,623,71,738,28"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="654,79,766,104"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="761,33,730,70,726,67,757,29"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="790,79,867,104"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="781,29,812,66,808,70,777,33"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="892,79,1003,104"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="798,28,907,71,905,76,796,33"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="1027,79,1107,104"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="817,28,1015,75,1013,80,816,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,151,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="362,107,147,152,146,146,361,101"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="175,152,303,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="388,106,282,149,280,144,386,102"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="328,152,393,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="408,106,380,143,376,140,404,103"/>
+<area shape="rect" id="Node000006" href="$command_8h.html" title="Заголовочный файл, содержащий объявления классов команд для выполнения трансформаций над моделью." alt="" coords="418,152,525,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="427,103,456,140,452,143,422,106"/>
+<area shape="rect" id="Node000007" href="$model__parser_8h.html" title="Заголовочный файл, содержащий объявления классов для работы с 3D&#45;моделями." alt="" coords="467,225,657,251"/>
+<area shape="poly" id="edge9_Node000002_Node000007" title=" " alt="" coords="460,102,501,120,521,134,539,150,555,180,562,211,557,212,550,182,535,154,518,138,498,125,457,107"/>
+<area shape="rect" id="Node000010" href="$observer_8h_source.html" title=" " alt="" coords="599,152,690,177"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="453,101,595,145,593,150,451,107"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="488,175,538,214,535,219,484,179"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="490,299,549,324"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="557,252,535,288,531,286,553,250"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="573,299,636,324"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="571,250,593,286,589,288,567,252"/>
+<area shape="poly" id="edge11_Node000010_Node000007" title=" " alt="" coords="633,179,588,218,584,214,630,175"/>
+</map>

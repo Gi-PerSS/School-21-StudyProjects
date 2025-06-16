@@ -1,0 +1,5 @@
+<map id="s21::ParserModel::getRotateY" name="s21::ParserModel::getRotateY">
+<area shape="rect" id="Node000001" title="Возвращает текущий угол поворота модели вокруг оси Y." alt="" coords="279,5,492,31"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1GLView.html#a2ea349febe7c9487e91d6fe57f9423e4" title="Обрабатывает движение мыши." alt="" coords="5,5,231,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="265,21,231,21,231,15,265,15"/>
+</map>

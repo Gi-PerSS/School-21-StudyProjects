@@ -1,0 +1,5 @@
+<map id="s21::GLView::GLView" name="s21::GLView::GLView">
+<area shape="rect" id="Node000001" title="Конструктор класса GLView с привязкой к модели." alt="" coords="5,5,161,31"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1ParserModel.html#af98f846f66e7c5be0b1fbf7b8f99ad7d" title="Добавляет наблюдателя для уведомления об изменениях модели." alt="" coords="209,5,433,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,15,196,15,196,21,162,21"/>
+</map>

@@ -1,0 +1,20 @@
+version: "3"
+
+services: 
+  server_p5:
+    build: 
+      context: .
+      dockerfile: Dockerfile_61
+    volumes: 
+      - ./nginx:/etc/nginx/
+    hostname: server_p5
+
+  proxy_p6:
+    build: 
+      context: .
+      dockerfile: Dockerfile_62
+    volumes: 
+      - ./nginx:/etc/nginx_6.2/      
+    ports:
+      - "80:8080"
+    

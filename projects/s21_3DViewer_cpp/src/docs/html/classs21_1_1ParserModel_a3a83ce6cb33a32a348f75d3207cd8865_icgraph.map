@@ -1,0 +1,5 @@
+<map id="s21::ParserModel::moveX" name="s21::ParserModel::moveX">
+<area shape="rect" id="Node000001" title="Перемещает модель по оси X." alt="" coords="225,13,412,38"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1MoveXCommand.html#a8d3c26c7f3e43cf95b4359c4fc21d73f" title="Выполняет перемещение модели по оси X." alt="" coords="5,5,177,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,28,178,28,178,23,212,23"/>
+</map>

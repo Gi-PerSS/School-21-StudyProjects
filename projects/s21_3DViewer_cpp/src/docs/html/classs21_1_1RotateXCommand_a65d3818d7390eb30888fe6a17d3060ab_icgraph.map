@@ -1,0 +1,5 @@
+<map id="s21::RotateXCommand::execute" name="s21::RotateXCommand::execute">
+<area shape="rect" id="Node000001" title="Выполняет поворот модели вокруг оси X." alt="" coords="279,5,449,45"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1GLView.html#a2ea349febe7c9487e91d6fe57f9423e4" title="Обрабатывает движение мыши." alt="" coords="5,13,231,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="265,28,231,28,231,23,265,23"/>
+</map>

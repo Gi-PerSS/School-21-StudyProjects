@@ -1,0 +1,17 @@
+<map id="headers/command.h" name="headers/command.h">
+<area shape="rect" id="Node000001" title="Заголовочный файл, содержащий объявления классов команд для выполнения трансформаций над моделью." alt="" coords="216,5,371,31"/>
+<area shape="rect" id="Node000002" href="$presenter__mainviewer_8h_source.html" title=" " alt="" coords="167,152,401,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="278,43,260,79,258,99,263,118,278,151,274,153,258,120,253,99,255,78,273,41"/>
+<area shape="rect" id="Node000004" href="$presenter__mainviewer_8cpp.html" title="Реализация класса MainViewer, представляющего главное окно приложения." alt="" coords="5,225,253,251"/>
+<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="267,41,211,88,182,119,157,153,141,192,133,226,128,224,136,190,152,151,178,116,207,84,264,37"/>
+<area shape="rect" id="Node000005" href="$view__glview_8h_source.html" title=" " alt="" coords="269,79,440,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="314,40,347,77,343,80,310,43"/>
+<area shape="rect" id="Node000007" href="$command_8cpp.html" title="Реализация методов классов команд для выполнения трансформаций над моделью." alt="" coords="464,79,632,104"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="348,32,507,76,506,81,347,37"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html" title="Главный файл приложения, инициализирующий и запускающий графическое окно." alt="" coords="277,225,413,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="305,186,337,223,333,227,301,190"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="248,185,156,228,154,223,246,181"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="335,116,297,154,294,150,331,112"/>
+<area shape="rect" id="Node000006" href="$view__glview_8cpp.html" title="Реализация класса GLView для отрисовки 3D&#45;моделей с использованием OpenGL." alt="" coords="426,152,609,177"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="394,107,492,149,490,154,392,112"/>
+</map>

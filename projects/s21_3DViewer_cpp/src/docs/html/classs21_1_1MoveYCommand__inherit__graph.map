@@ -1,0 +1,5 @@
+<map id="s21::MoveYCommand" name="s21::MoveYCommand">
+<area shape="rect" id="Node000001" title="Команда для перемещения модели по оси Y." alt="" coords="5,139,160,224"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1Command.html" title="Абстрактный базовый класс для всех команд." alt="" coords="24,5,141,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,104,85,138,80,138,80,104"/>
+</map>

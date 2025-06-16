@@ -1,0 +1,9 @@
+<map id="s21::ParserModel::rotateY" name="s21::ParserModel::rotateY">
+<area shape="rect" id="Node000001" title="Поворачивает модель вокруг оси Y." alt="" coords="497,31,685,56"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1RotateYCommand.html#a0c987cbc188e3aee15924e3d21ca02db" title="Выполняет поворот модели вокруг оси Y." alt="" coords="279,23,449,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="484,46,450,46,450,41,484,41"/>
+<area shape="rect" id="Node000003" href="$classs21_1_1GLView.html#a2ea349febe7c9487e91d6fe57f9423e4" title="Обрабатывает движение мыши." alt="" coords="5,5,231,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="265,36,231,32,231,27,265,31"/>
+<area shape="rect" id="Node000004" href="$classs21_1_1GLView.html#ae2f300617dbeed40928534c9f104f99d" title="Обновляет состояние анимации." alt="" coords="8,55,228,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="265,56,229,59,228,54,265,50"/>
+</map>

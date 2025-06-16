@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>3DViewer v2.0.: Исходный файл headers/view_glview.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">3DViewer v2.0.
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_7f57b1e41c5acd0e859ae5f3a2b075a9.html">headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">view_glview.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef S21_VIEW_GLVIEW_H_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define S21_VIEW_GLVIEW_H_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QOpenGLFunctions&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QOpenGLWidget&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;QPoint&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="command_8h.html">./command.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="model__parser_8h.html">./model_parser.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;observer.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span>s21 {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classs21_1_1GLView.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="classs21_1_1GLView.html">GLView</a> : <span class="keyword">public</span> QOpenGLWidget,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>               <span class="keyword">protected</span> QOpenGLFunctions,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>               <span class="keyword">public</span> <a class="code hl_class" href="classs21_1_1ModelObserver.html">ModelObserver</a> {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  Q_OBJECT</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_struct" href="structs21_1_1ObjData.html">ObjData</a> data_;  </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  QColor vertex_color_;  </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordtype">int</span> vertex_size_;      </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keywordtype">int</span> vertex_shape_;  </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  QColor edge_color_;  </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordtype">int</span> edge_width_;     </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordtype">int</span> edge_type_;  </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  QColor bg_color_;  </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">bool</span> central_projection_;  </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  QPoint last_pos_;  </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <a class="code hl_class" href="classs21_1_1ParserModel.html">ParserModel</a>* model_;  </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1GLView.html#ab05ba6eaa72c2798af5e8fa2bfd3bac3">initializeGL</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1GLView.html#a6e6473740e35dc9655125041e64f935b">resizeGL</a>(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1GLView.html#a8c5232b6b8851d6a386b9f2fdcd84c96">paintGL</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1GLView.html#aef6a5962aa36673999734f6096961d85">mousePressEvent</a>(QMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1GLView.html#a2ea349febe7c9487e91d6fe57f9423e4">mouseMoveEvent</a>(QMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1GLView.html#ab690c22b8112ad9c6a3ba1e77ff6192d">wheelEvent</a>(QWheelEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keyword">explicit</span> <a class="code hl_class" href="classs21_1_1GLView.html">GLView</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keyword">explicit</span> <a class="code hl_class" href="classs21_1_1GLView.html">GLView</a>(<a class="code hl_class" href="classs21_1_1ParserModel.html">ParserModel</a>&amp; model, QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="classs21_1_1GLView.html#a0b32b51cd06704d07ee01a101b2d61c0">  104</a></span>  <a class="code hl_function" href="classs21_1_1GLView.html#a0b32b51cd06704d07ee01a101b2d61c0">~GLView</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1GLView.html#a233227d12246df1826d1863ecd229bda">setModel</a>(<a class="code hl_class" href="classs21_1_1ParserModel.html">ParserModel</a>&amp; model);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1GLView.html#a0332453dd7e0814da8c92bd15d733ebc">setData</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structs21_1_1ObjData.html">ObjData</a>&amp; data);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1GLView.html#a6715af123db861b9d46277d4fa7f692a">applySettings</a>(QColor vertex_color, <span class="keywordtype">int</span> vertex_size, <span class="keywordtype">int</span> vertex_shape,</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                     QColor edge_color, <span class="keywordtype">int</span> edge_width, <span class="keywordtype">int</span> edge_type,</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                     QColor bg_color, <span class="keywordtype">bool</span> central_projection);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1GLView.html#ae2f300617dbeed40928534c9f104f99d">updateAnimation</a>(<span class="keywordtype">float</span> angle);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1GLView.html#ad0696475f236be917fb59308aa91289c">onModelChanged</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structs21_1_1ObjData.html">ObjData</a>&amp; data) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> signals:</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="classs21_1_1GLView.html#aa74cf320f30cc243d8820e2dd44e12ff">  157</a></span>  <span class="keywordtype">void</span> <a class="code hl_signal" href="classs21_1_1GLView.html#aa74cf320f30cc243d8820e2dd44e12ff">requestFrame</a>(QImage frame);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="classs21_1_1GLView.html#a363bdbbae339eacf815ac466063f9641">  165</a></span>  <span class="keywordtype">void</span> <a class="code hl_signal" href="classs21_1_1GLView.html#a363bdbbae339eacf815ac466063f9641">rotationChanged</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>};</div>
+</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>}  <span class="comment">// namespace s21</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="preprocessor">#endif  </span><span class="comment">// S21_VIEW_GLVIEW_H_</span></div>
+<div class="ttc" id="aclasss21_1_1GLView_html"><div class="ttname"><a href="classs21_1_1GLView.html">s21::GLView</a></div><div class="ttdoc">Класс для отрисовки 3D-моделей с использованием OpenGL.</div><div class="ttdef"><b>Definition</b> view_glview.h:24</div></div>
+<div class="ttc" id="aclasss21_1_1GLView_html_a0332453dd7e0814da8c92bd15d733ebc"><div class="ttname"><a href="classs21_1_1GLView.html#a0332453dd7e0814da8c92bd15d733ebc">s21::GLView::setData</a></div><div class="ttdeci">void setData(const ObjData &amp;data)</div><div class="ttdoc">Устанавливает данные модели для отрисовки.</div><div class="ttdef"><b>Definition</b> view_glview.cpp:181</div></div>
+<div class="ttc" id="aclasss21_1_1GLView_html_a0b32b51cd06704d07ee01a101b2d61c0"><div class="ttname"><a href="classs21_1_1GLView.html#a0b32b51cd06704d07ee01a101b2d61c0">s21::GLView::~GLView</a></div><div class="ttdeci">~GLView() override=default</div><div class="ttdoc">Деструктор класса GLView.</div></div>
+<div class="ttc" id="aclasss21_1_1GLView_html_a233227d12246df1826d1863ecd229bda"><div class="ttname"><a href="classs21_1_1GLView.html#a233227d12246df1826d1863ecd229bda">s21::GLView::setModel</a></div><div class="ttdeci">void setModel(ParserModel &amp;model)</div><div class="ttdoc">Устанавливает модель данных для отрисовки.</div><div class="ttdef"><b>Definition</b> view_glview.cpp:70</div></div>
+<div class="ttc" id="aclasss21_1_1GLView_html_a2ea349febe7c9487e91d6fe57f9423e4"><div class="ttname"><a href="classs21_1_1GLView.html#a2ea349febe7c9487e91d6fe57f9423e4">s21::GLView::mouseMoveEvent</a></div><div class="ttdeci">void mouseMoveEvent(QMouseEvent *event) override</div><div class="ttdoc">Обрабатывает движение мыши.</div><div class="ttdef"><b>Definition</b> view_glview.cpp:259</div></div>
+<div class="ttc" id="aclasss21_1_1GLView_html_a363bdbbae339eacf815ac466063f9641"><div class="ttname"><a href="classs21_1_1GLView.html#a363bdbbae339eacf815ac466063f9641">s21::GLView::rotationChanged</a></div><div class="ttdeci">void rotationChanged(float x, float y)</div><div class="ttdoc">Сигнал для уведомления об изменении углов вращения.</div></div>
+<div class="ttc" id="aclasss21_1_1GLView_html_a6715af123db861b9d46277d4fa7f692a"><div class="ttname"><a href="classs21_1_1GLView.html#a6715af123db861b9d46277d4fa7f692a">s21::GLView::applySettings</a></div><div class="ttdeci">void applySettings(QColor vertex_color, int vertex_size, int vertex_shape, QColor edge_color, int edge_width, int edge_type, QColor bg_color, bool central_projection)</div><div class="ttdoc">Применяет настройки отображения.</div><div class="ttdef"><b>Definition</b> view_glview.cpp:201</div></div>
+<div class="ttc" id="aclasss21_1_1GLView_html_a6e6473740e35dc9655125041e64f935b"><div class="ttname"><a href="classs21_1_1GLView.html#a6e6473740e35dc9655125041e64f935b">s21::GLView::resizeGL</a></div><div class="ttdeci">void resizeGL(int w, int h) override</div><div class="ttdoc">Обрабатывает изменение размеров виджета.</div><div class="ttdef"><b>Definition</b> view_glview.cpp:98</div></div>
+<div class="ttc" id="aclasss21_1_1GLView_html_a8c5232b6b8851d6a386b9f2fdcd84c96"><div class="ttname"><a href="classs21_1_1GLView.html#a8c5232b6b8851d6a386b9f2fdcd84c96">s21::GLView::paintGL</a></div><div class="ttdeci">void paintGL() override</div><div class="ttdoc">Отрисовывает содержимое виджета OpenGL.</div><div class="ttdef"><b>Definition</b> view_glview.cpp:117</div></div>
+<div class="ttc" id="aclasss21_1_1GLView_html_aa74cf320f30cc243d8820e2dd44e12ff"><div class="ttname"><a href="classs21_1_1GLView.html#aa74cf320f30cc243d8820e2dd44e12ff">s21::GLView::requestFrame</a></div><div class="ttdeci">void requestFrame(QImage frame)</div><div class="ttdoc">Сигнал для запроса кадра.</div></div>
+<div class="ttc" id="aclasss21_1_1GLView_html_ab05ba6eaa72c2798af5e8fa2bfd3bac3"><div class="ttname"><a href="classs21_1_1GLView.html#ab05ba6eaa72c2798af5e8fa2bfd3bac3">s21::GLView::initializeGL</a></div><div class="ttdeci">void initializeGL() override</div><div class="ttdoc">Инициализирует OpenGL-функции.</div><div class="ttdef"><b>Definition</b> view_glview.cpp:83</div></div>
+<div class="ttc" id="aclasss21_1_1GLView_html_ab690c22b8112ad9c6a3ba1e77ff6192d"><div class="ttname"><a href="classs21_1_1GLView.html#ab690c22b8112ad9c6a3ba1e77ff6192d">s21::GLView::wheelEvent</a></div><div class="ttdeci">void wheelEvent(QWheelEvent *event) override</div><div class="ttdoc">Обрабатывает вращение колеса мыши.</div><div class="ttdef"><b>Definition</b> view_glview.cpp:283</div></div>
+<div class="ttc" id="aclasss21_1_1GLView_html_ad0696475f236be917fb59308aa91289c"><div class="ttname"><a href="classs21_1_1GLView.html#ad0696475f236be917fb59308aa91289c">s21::GLView::onModelChanged</a></div><div class="ttdeci">void onModelChanged(const ObjData &amp;data) override</div><div class="ttdoc">Обрабатывает изменения данных модели.</div><div class="ttdef"><b>Definition</b> view_glview.cpp:238</div></div>
+<div class="ttc" id="aclasss21_1_1GLView_html_ae2f300617dbeed40928534c9f104f99d"><div class="ttname"><a href="classs21_1_1GLView.html#ae2f300617dbeed40928534c9f104f99d">s21::GLView::updateAnimation</a></div><div class="ttdeci">void updateAnimation(float angle)</div><div class="ttdoc">Обновляет состояние анимации.</div><div class="ttdef"><b>Definition</b> view_glview.cpp:224</div></div>
+<div class="ttc" id="aclasss21_1_1GLView_html_aef6a5962aa36673999734f6096961d85"><div class="ttname"><a href="classs21_1_1GLView.html#aef6a5962aa36673999734f6096961d85">s21::GLView::mousePressEvent</a></div><div class="ttdeci">void mousePressEvent(QMouseEvent *event) override</div><div class="ttdoc">Обрабатывает нажатие кнопки мыши.</div><div class="ttdef"><b>Definition</b> view_glview.cpp:250</div></div>
+<div class="ttc" id="aclasss21_1_1ModelObserver_html"><div class="ttname"><a href="classs21_1_1ModelObserver.html">s21::ModelObserver</a></div><div class="ttdoc">Интерфейс для наблюдателей модели.</div><div class="ttdef"><b>Definition</b> observer.h:15</div></div>
+<div class="ttc" id="aclasss21_1_1ParserModel_html"><div class="ttname"><a href="classs21_1_1ParserModel.html">s21::ParserModel</a></div><div class="ttdoc">Класс для управления данными 3D-модели.</div><div class="ttdef"><b>Definition</b> model_parser.h:57</div></div>
+<div class="ttc" id="acommand_8h_html"><div class="ttname"><a href="command_8h.html">command.h</a></div><div class="ttdoc">Заголовочный файл, содержащий объявления классов команд для выполнения трансформаций над моделью.</div></div>
+<div class="ttc" id="amodel__parser_8h_html"><div class="ttname"><a href="model__parser_8h.html">model_parser.h</a></div><div class="ttdoc">Заголовочный файл, содержащий объявления классов для работы с 3D-моделями.</div></div>
+<div class="ttc" id="astructs21_1_1ObjData_html"><div class="ttname"><a href="structs21_1_1ObjData.html">s21::ObjData</a></div><div class="ttdoc">Структура для хранения данных 3D-модели.</div><div class="ttdef"><b>Definition</b> model_parser.h:26</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

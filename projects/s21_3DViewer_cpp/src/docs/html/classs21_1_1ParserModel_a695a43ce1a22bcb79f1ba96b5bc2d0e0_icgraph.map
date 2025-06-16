@@ -1,0 +1,9 @@
+<map id="s21::ParserModel::removeObserver" name="s21::ParserModel::removeObserver">
+<area shape="rect" id="Node000001" title="Удаляет наблюдателя из списка." alt="" coords="543,23,733,63"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1GLView.html#a233227d12246df1826d1863ecd229bda" title="Устанавливает модель данных для отрисовки." alt="" coords="297,5,465,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="528,35,465,29,466,24,529,30"/>
+<area shape="rect" id="Node000004" href="$classs21_1_1MainViewer.html#abb6d91ae6b8b75080ccba529dc0be0f6" title="Деструктор класса MainViewer." alt="" coords="268,55,495,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="529,56,495,59,495,54,529,51"/>
+<area shape="rect" id="Node000003" href="$classs21_1_1MainViewer.html#af2754b37b6886ce62f156cd2525276ea" title="Конструктор класса MainViewer." alt="" coords="5,5,220,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="284,21,220,21,220,15,284,15"/>
+</map>

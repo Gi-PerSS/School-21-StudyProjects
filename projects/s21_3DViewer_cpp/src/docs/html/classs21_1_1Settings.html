@@ -1,0 +1,491 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>3DViewer v2.0.: Класс s21::Settings</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">3DViewer v2.0.
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>s21</b></li><li class="navelem"><a class="el" href="classs21_1_1Settings.html">Settings</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#signals">Сигналы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="classs21_1_1Settings-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс s21::Settings</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для управления настройками отображения.  
+ <a href="classs21_1_1Settings.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="view__settings_8h_source.html">view_settings.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:s21::Settings:</div>
+<div class="dyncontent">
+<div class="center"><img src="classs21_1_1Settings__inherit__graph.png" border="0" usemap="#as21_1_1Settings_inherit__map" alt="Inheritance graph"/></div>
+<map name="as21_1_1Settings_inherit__map" id="as21_1_1Settings_inherit__map">
+<area shape="rect" title="Класс для управления настройками отображения." alt="" coords="5,119,167,364"/>
+<area shape="rect" title=" " alt="" coords="53,5,119,71"/>
+<area shape="poly" title=" " alt="" coords="89,84,89,118,83,118,83,84"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса s21::Settings:</div>
+<div class="dyncontent">
+<div class="center"><img src="classs21_1_1Settings__coll__graph.png" border="0" usemap="#as21_1_1Settings_coll__map" alt="Collaboration graph"/></div>
+<map name="as21_1_1Settings_coll__map" id="as21_1_1Settings_coll__map">
+<area shape="rect" title="Класс для управления настройками отображения." alt="" coords="5,119,167,364"/>
+<area shape="rect" title=" " alt="" coords="53,5,119,71"/>
+<area shape="poly" title=" " alt="" coords="89,84,89,118,83,118,83,84"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
+Сигналы</h2></td></tr>
+<tr class="memitem:a9600bea555430d0c66573ccc5b009c31" id="r_a9600bea555430d0c66573ccc5b009c31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1Settings.html#a9600bea555430d0c66573ccc5b009c31">onSetApplyClicked</a> (QColor vertex_color, int vertex_size, int vertex_shape, QColor edge_color, int edge_width, int edge_type, QColor bg_color, bool central_projection)</td></tr>
+<tr class="memdesc:a9600bea555430d0c66573ccc5b009c31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал для применения настроек.  <br /></td></tr>
+<tr class="separator:a9600bea555430d0c66573ccc5b009c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aea789fea4c8d9ace14bb522e86244906" id="r_aea789fea4c8d9ace14bb522e86244906"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1Settings.html#aea789fea4c8d9ace14bb522e86244906">Settings</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:aea789fea4c8d9ace14bb522e86244906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса <a class="el" href="classs21_1_1Settings.html" title="Класс для управления настройками отображения.">Settings</a>.  <br /></td></tr>
+<tr class="separator:aea789fea4c8d9ace14bb522e86244906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d759f4fc22b8533644fc420cff69e11" id="r_a1d759f4fc22b8533644fc420cff69e11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1Settings.html#a1d759f4fc22b8533644fc420cff69e11">~Settings</a> () override</td></tr>
+<tr class="memdesc:a1d759f4fc22b8533644fc420cff69e11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор класса <a class="el" href="classs21_1_1Settings.html" title="Класс для управления настройками отображения.">Settings</a>.  <br /></td></tr>
+<tr class="separator:a1d759f4fc22b8533644fc420cff69e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b059bc9474d92b44d02ec49cbc6355" id="r_a14b059bc9474d92b44d02ec49cbc6355"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1Settings.html#a14b059bc9474d92b44d02ec49cbc6355">getVertexColor</a> () const</td></tr>
+<tr class="memdesc:a14b059bc9474d92b44d02ec49cbc6355"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает текущий цвет вершин.  <br /></td></tr>
+<tr class="separator:a14b059bc9474d92b44d02ec49cbc6355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3f6f8ea3b4e00b3ff04a0fe885da39e" id="r_ad3f6f8ea3b4e00b3ff04a0fe885da39e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1Settings.html#ad3f6f8ea3b4e00b3ff04a0fe885da39e">getVertexSize</a> () const</td></tr>
+<tr class="memdesc:ad3f6f8ea3b4e00b3ff04a0fe885da39e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает текущий размер вершин.  <br /></td></tr>
+<tr class="separator:ad3f6f8ea3b4e00b3ff04a0fe885da39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a062a68a4083da89f7c7cf9adec10afd1" id="r_a062a68a4083da89f7c7cf9adec10afd1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1Settings.html#a062a68a4083da89f7c7cf9adec10afd1">getVertexShape</a> () const</td></tr>
+<tr class="memdesc:a062a68a4083da89f7c7cf9adec10afd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает текущую форму вершин.  <br /></td></tr>
+<tr class="separator:a062a68a4083da89f7c7cf9adec10afd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3c32c51cb7b7ca7c7a9e76462f42b0b" id="r_aa3c32c51cb7b7ca7c7a9e76462f42b0b"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1Settings.html#aa3c32c51cb7b7ca7c7a9e76462f42b0b">getEdgeColor</a> () const</td></tr>
+<tr class="memdesc:aa3c32c51cb7b7ca7c7a9e76462f42b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает текущий цвет ребер.  <br /></td></tr>
+<tr class="separator:aa3c32c51cb7b7ca7c7a9e76462f42b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a778a40a914a5ded4422693f63bbcddae" id="r_a778a40a914a5ded4422693f63bbcddae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1Settings.html#a778a40a914a5ded4422693f63bbcddae">getEdgeWidth</a> () const</td></tr>
+<tr class="memdesc:a778a40a914a5ded4422693f63bbcddae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает текущую толщину ребер.  <br /></td></tr>
+<tr class="separator:a778a40a914a5ded4422693f63bbcddae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13f58d635258582d371860a900626e1a" id="r_a13f58d635258582d371860a900626e1a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1Settings.html#a13f58d635258582d371860a900626e1a">getEdgeType</a> () const</td></tr>
+<tr class="memdesc:a13f58d635258582d371860a900626e1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает текущий тип линий ребер.  <br /></td></tr>
+<tr class="separator:a13f58d635258582d371860a900626e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18863619a584dd8c02bc059d3acf554a" id="r_a18863619a584dd8c02bc059d3acf554a"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1Settings.html#a18863619a584dd8c02bc059d3acf554a">getBgColor</a> () const</td></tr>
+<tr class="memdesc:a18863619a584dd8c02bc059d3acf554a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает текущий цвет фона.  <br /></td></tr>
+<tr class="separator:a18863619a584dd8c02bc059d3acf554a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73df1343acac47775e373ee3955cfa22" id="r_a73df1343acac47775e373ee3955cfa22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1Settings.html#a73df1343acac47775e373ee3955cfa22">isCentralProjection</a> () const</td></tr>
+<tr class="memdesc:a73df1343acac47775e373ee3955cfa22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, включен ли режим центральной проекции.  <br /></td></tr>
+<tr class="separator:a73df1343acac47775e373ee3955cfa22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс для управления настройками отображения. </p>
+<p>Этот класс представляет диалоговое окно, которое позволяет пользователю настраивать параметры отображения, такие как цвета, размеры и типы элементов модели, а также сохранять эти настройки в конфигурационный файл. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="aea789fea4c8d9ace14bb522e86244906" name="aea789fea4c8d9ace14bb522e86244906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea789fea4c8d9ace14bb522e86244906">&#9670;&#160;</a></span>Settings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">s21::Settings::Settings </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор класса <a class="el" href="classs21_1_1Settings.html" title="Класс для управления настройками отображения.">Settings</a>. </p>
+<p>Инициализирует диалоговое окно настроек и загружает сохраненные настройки из файла.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Указатель на родительский виджет (по умолчанию nullptr).</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Инициализирует диалоговое окно настроек, загружает сохраненные настройки из конфигурационного файла и настраивает соединения сигналов и слотов.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Указатель на родительский виджет (по умолчанию nullptr). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1d759f4fc22b8533644fc420cff69e11" name="a1d759f4fc22b8533644fc420cff69e11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d759f4fc22b8533644fc420cff69e11">&#9670;&#160;</a></span>~Settings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">s21::Settings::~Settings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Деструктор класса <a class="el" href="classs21_1_1Settings.html" title="Класс для управления настройками отображения.">Settings</a>. </p>
+<p>Освобождает ресурсы и сохраняет текущие настройки в файл.</p>
+<p>Освобождает ресурсы, сохраняет текущие настройки в конфигурационный файл и очищает память. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a18863619a584dd8c02bc059d3acf554a" name="a18863619a584dd8c02bc059d3acf554a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18863619a584dd8c02bc059d3acf554a">&#9670;&#160;</a></span>getBgColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor s21::Settings::getBgColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает текущий цвет фона. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>QColor Цвет фона. </dd></dl>
+
+</div>
+</div>
+<a id="aa3c32c51cb7b7ca7c7a9e76462f42b0b" name="aa3c32c51cb7b7ca7c7a9e76462f42b0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3c32c51cb7b7ca7c7a9e76462f42b0b">&#9670;&#160;</a></span>getEdgeColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor s21::Settings::getEdgeColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает текущий цвет ребер. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>QColor Цвет ребер. </dd></dl>
+
+</div>
+</div>
+<a id="a13f58d635258582d371860a900626e1a" name="a13f58d635258582d371860a900626e1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13f58d635258582d371860a900626e1a">&#9670;&#160;</a></span>getEdgeType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int s21::Settings::getEdgeType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает текущий тип линий ребер. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>int Тип линий (0 - сплошные, 1 - пунктирные). </dd></dl>
+
+</div>
+</div>
+<a id="a778a40a914a5ded4422693f63bbcddae" name="a778a40a914a5ded4422693f63bbcddae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a778a40a914a5ded4422693f63bbcddae">&#9670;&#160;</a></span>getEdgeWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int s21::Settings::getEdgeWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает текущую толщину ребер. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>int Толщина ребер. </dd></dl>
+
+</div>
+</div>
+<a id="a14b059bc9474d92b44d02ec49cbc6355" name="a14b059bc9474d92b44d02ec49cbc6355"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14b059bc9474d92b44d02ec49cbc6355">&#9670;&#160;</a></span>getVertexColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor s21::Settings::getVertexColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает текущий цвет вершин. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>QColor Цвет вершин. </dd></dl>
+
+</div>
+</div>
+<a id="a062a68a4083da89f7c7cf9adec10afd1" name="a062a68a4083da89f7c7cf9adec10afd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a062a68a4083da89f7c7cf9adec10afd1">&#9670;&#160;</a></span>getVertexShape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int s21::Settings::getVertexShape </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает текущую форму вершин. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>int Форма вершин (0 - нет, 1 - точки, 2 - квадраты). </dd></dl>
+
+</div>
+</div>
+<a id="ad3f6f8ea3b4e00b3ff04a0fe885da39e" name="ad3f6f8ea3b4e00b3ff04a0fe885da39e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3f6f8ea3b4e00b3ff04a0fe885da39e">&#9670;&#160;</a></span>getVertexSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int s21::Settings::getVertexSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает текущий размер вершин. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>int Размер вершин. </dd></dl>
+
+</div>
+</div>
+<a id="a73df1343acac47775e373ee3955cfa22" name="a73df1343acac47775e373ee3955cfa22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73df1343acac47775e373ee3955cfa22">&#9670;&#160;</a></span>isCentralProjection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool s21::Settings::isCentralProjection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет, включен ли режим центральной проекции. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>bool true, если включен режим центральной проекции, иначе false. </dd></dl>
+
+</div>
+</div>
+<a id="a9600bea555430d0c66573ccc5b009c31" name="a9600bea555430d0c66573ccc5b009c31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9600bea555430d0c66573ccc5b009c31">&#9670;&#160;</a></span>onSetApplyClicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void s21::Settings::onSetApplyClicked </td>
+          <td>(</td>
+          <td class="paramtype">QColor&#160;</td>
+          <td class="paramname"><em>vertex_color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vertex_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vertex_shape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QColor&#160;</td>
+          <td class="paramname"><em>edge_color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>edge_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>edge_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QColor&#160;</td>
+          <td class="paramname"><em>bg_color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>central_projection</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал для применения настроек. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vertex_color</td><td>Цвет вершин. </td></tr>
+    <tr><td class="paramname">vertex_size</td><td>Размер вершин. </td></tr>
+    <tr><td class="paramname">vertex_shape</td><td>Форма вершин (0 - нет, 1 - точки, 2 - квадраты). </td></tr>
+    <tr><td class="paramname">edge_color</td><td>Цвет ребер. </td></tr>
+    <tr><td class="paramname">edge_width</td><td>Толщина ребер. </td></tr>
+    <tr><td class="paramname">edge_type</td><td>Тип линий ребер (0 - сплошные, 1 - пунктирные). </td></tr>
+    <tr><td class="paramname">bg_color</td><td>Цвет фона. </td></tr>
+    <tr><td class="paramname">central_projection</td><td>Режим проекции (true - центральная, false - параллельная). </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="classs21_1_1Settings_a9600bea555430d0c66573ccc5b009c31_icgraph.png" border="0" usemap="#aclasss21_1_1Settings_a9600bea555430d0c66573ccc5b009c31_icgraph" alt=""/></div>
+<map name="aclasss21_1_1Settings_a9600bea555430d0c66573ccc5b009c31_icgraph" id="aclasss21_1_1Settings_a9600bea555430d0c66573ccc5b009c31_icgraph">
+<area shape="rect" title="Сигнал для применения настроек." alt="" coords="268,5,456,45"/>
+<area shape="rect" href="classs21_1_1MainViewer.html#af2754b37b6886ce62f156cd2525276ea" title="Конструктор класса MainViewer." alt="" coords="5,13,220,38"/>
+<area shape="poly" title=" " alt="" coords="254,28,220,28,220,23,254,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>headers/<a class="el" href="view__settings_8h_source.html">view_settings.h</a></li>
+<li>sources/<a class="el" href="view__settings_8cpp.html">view_settings.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

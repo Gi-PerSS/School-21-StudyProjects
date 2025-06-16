@@ -1,0 +1,7 @@
+<map id="s21::ScaleCommand::execute" name="s21::ScaleCommand::execute">
+<area shape="rect" id="Node000001" title="Выполняет масштабирование модели." alt="" coords="5,5,168,45"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1ParserModel.html#aabcc508a5d37e8eca49cfe9278ca5051" title="Масштабирует модель." alt="" coords="216,13,391,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,23,203,23,203,28,168,28"/>
+<area shape="rect" id="Node000003" href="$classs21_1_1ParserModel.html#ae8dfc0dc5f1ba4a99f294d02c89e1e0c" title="Уведомляет всех наблюдателей об изменении данных модели." alt="" coords="439,5,617,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="391,23,425,23,425,28,391,28"/>
+</map>

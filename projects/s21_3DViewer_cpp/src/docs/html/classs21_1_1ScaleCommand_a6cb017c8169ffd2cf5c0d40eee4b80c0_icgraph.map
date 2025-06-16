@@ -1,0 +1,5 @@
+<map id="s21::ScaleCommand::execute" name="s21::ScaleCommand::execute">
+<area shape="rect" id="Node000001" title="Выполняет масштабирование модели." alt="" coords="237,5,400,45"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1GLView.html#ab690c22b8112ad9c6a3ba1e77ff6192d" title="Обрабатывает вращение колеса мыши." alt="" coords="5,13,189,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,28,190,28,190,23,224,23"/>
+</map>

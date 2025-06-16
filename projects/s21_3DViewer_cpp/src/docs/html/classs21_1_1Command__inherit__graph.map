@@ -1,0 +1,17 @@
+<map id="s21::Command" name="s21::Command">
+<area shape="rect" id="Node000001" title="Абстрактный базовый класс для всех команд." alt="" coords="569,5,686,91"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1MoveXCommand.html" title="Команда для перемещения модели по оси X." alt="" coords="5,139,161,224"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="556,61,380,90,277,113,175,141,162,146,161,140,173,136,276,107,379,85,555,56"/>
+<area shape="rect" id="Node000003" href="$classs21_1_1MoveYCommand.html" title="Команда для перемещения модели по оси Y." alt="" coords="186,139,341,224"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="556,73,459,103,354,141,342,146,340,141,352,136,458,98,554,68"/>
+<area shape="rect" id="Node000004" href="$classs21_1_1MoveZCommand.html" title="Команда для перемещения модели по оси Z." alt="" coords="365,139,522,224"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="559,101,503,141,500,136,556,97"/>
+<area shape="rect" id="Node000005" href="$classs21_1_1RotateXCommand.html" title="Команда для поворота модели вокруг оси X." alt="" coords="546,139,709,224"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="630,104,630,138,625,138,625,104"/>
+<area shape="rect" id="Node000006" href="$classs21_1_1RotateYCommand.html" title="Команда для поворота модели вокруг оси Y." alt="" coords="733,139,895,224"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="699,96,756,136,753,141,696,101"/>
+<area shape="rect" id="Node000007" href="$classs21_1_1RotateZCommand.html" title="Команда для поворота модели вокруг оси Z." alt="" coords="920,139,1084,224"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="700,68,799,98,908,136,921,141,919,146,906,141,798,103,698,73"/>
+<area shape="rect" id="Node000008" href="$classs21_1_1ScaleCommand.html" title="Команда для масштабирования модели." alt="" coords="1109,139,1255,224"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="700,54,883,83,991,106,1097,136,1109,140,1108,145,1096,141,990,111,882,88,699,60"/>
+</map>

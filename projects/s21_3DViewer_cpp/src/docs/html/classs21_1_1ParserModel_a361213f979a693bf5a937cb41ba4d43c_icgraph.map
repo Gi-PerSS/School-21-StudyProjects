@@ -1,0 +1,7 @@
+<map id="s21::ParserModel::rotateX" name="s21::ParserModel::rotateX">
+<area shape="rect" id="Node000001" title="Поворачивает модель вокруг оси X." alt="" coords="497,13,687,38"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1RotateXCommand.html#a65d3818d7390eb30888fe6a17d3060ab" title="Выполняет поворот модели вокруг оси X." alt="" coords="279,5,449,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="484,28,450,28,450,23,484,23"/>
+<area shape="rect" id="Node000003" href="$classs21_1_1GLView.html#a2ea349febe7c9487e91d6fe57f9423e4" title="Обрабатывает движение мыши." alt="" coords="5,13,231,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="265,28,231,28,231,23,265,23"/>
+</map>

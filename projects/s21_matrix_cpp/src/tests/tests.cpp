@@ -1,0 +1,530 @@
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
+
+#include "../headers/s21_matrix_oop.h"
+
+TEST(ConstructorsTests, all) {
+  /*
+  Конструкторы, тестовые случаи:
+    - Проверка создания матрицы с заданными размерами:
+    - Проверка создания квадратной матрицы
+    - Проверка создания пустой матрицы:
+  */
+
+  // Arrange
+  int rows = 2;
+  int columns = 3;
+  int square = 5;
+  // Act
+  S21Matrix ZeroMatrix;
+  S21Matrix SquareMatrix(square);
+  S21Matrix RowsOnColumnsMatrix(rows, columns);
+
+  // Assert
+  ASSERT_EQ(0, ZeroMatrix.GetColumnsNumber());
+  ASSERT_EQ(0, ZeroMatrix.GetRowsNumber());
+  ASSERT_EQ(square, SquareMatrix.GetColumnsNumber());
+  ASSERT_EQ(square, SquareMatrix.GetRowsNumber());
+  ASSERT_EQ(columns, RowsOnColumnsMatrix.GetColumnsNumber());
+  ASSERT_EQ(rows, RowsOnColumnsMatrix.GetRowsNumber());
+}
+
+TEST(LibraryTests, EqMatrix) {
+  /*
+  Проверка на равенство
+    - Проверка двух пустых матриц на равенство.
+    - Проверка двух единичных матриц на равенство.
+    - Проверка двух матриц с одинаковыми значениями элементов и одинаковыми
+    размерами.
+    - Проверка двух матриц с разными размерами.
+    - Проверка матрицы на равенство самой себе.
+  */
+
+  S21Matrix EmptyMatrix;
+  S21Matrix EmptyMatrixOther;
+  bool is_equal = EmptyMatrix.EqMatrix(EmptyMatrixOther);
+  ASSERT_EQ(1, is_equal);
+
+  S21Matrix OneOnOneMatrix(1);
+  S21Matrix OneOnOneMatrixOther(1);
+  OneOnOneMatrix = "tests/test_matrices/one_on_one.mx";
+  OneOnOneMatrixOther = "tests/test_matrices/one_on_one.mx";
+  is_equal = OneOnOneMatrix.EqMatrix(OneOnOneMatrixOther);
+  ASSERT_EQ(1, is_equal);
+  OneOnOneMatrixOther = "tests/test_matrices/one_on_one_unequal.mx";
+  is_equal = OneOnOneMatrix.EqMatrix(OneOnOneMatrixOther);
+  ASSERT_EQ(0, is_equal);
+
+  S21Matrix ThreeOnThreeMatrix(3);
+  S21Matrix ThreeOnThreeMatrixOther(3);
+  ThreeOnThreeMatrix = "tests/test_matrices/three_on_three.mx";
+  ThreeOnThreeMatrixOther = "tests/test_matrices/three_on_three.mx";
+  is_equal = ThreeOnThreeMatrix.EqMatrix(ThreeOnThreeMatrixOther);
+  ASSERT_EQ(1, is_equal);
+  ThreeOnThreeMatrixOther = "./tests/test_matrices/three_on_three_unequal.mx";
+  is_equal = ThreeOnThreeMatrix.EqMatrix(ThreeOnThreeMatrixOther);
+  ASSERT_EQ(0, is_equal);
+
+  S21Matrix OneOnTwo(1, 2);
+  is_equal = ThreeOnThreeMatrix.EqMatrix(OneOnTwo);
+  ASSERT_EQ(0, is_equal);
+
+  is_equal = ThreeOnThreeMatrix.EqMatrix(ThreeOnThreeMatrix);
+  ASSERT_EQ(1, is_equal);
+}
+
+TEST(OperatorsTests, are_equal) {
+  /*
+  Проверка на равенство
+    - Проверка двух пустых матриц на равенство.
+    - Проверка двух единичных матриц на равенство.
+    - Проверка двух матриц с одинаковыми значениями элементов и одинаковыми
+    размерами.
+    - Проверка двух матриц с разными размерами.
+    - Проверка матрицы на равенство самой себе.
+  */
+
+  S21Matrix EmptyMatrix;
+  S21Matrix EmptyMatrixOther;
+  bool is_equal = (EmptyMatrix == EmptyMatrixOther);
+  ASSERT_EQ(1, is_equal);
+
+  S21Matrix OneOnOneMatrix(1);
+  S21Matrix OneOnOneMatrixOther(1);
+  OneOnOneMatrix = "tests/test_matrices/one_on_one.mx";
+  OneOnOneMatrixOther = "tests/test_matrices/one_on_one.mx";
+  is_equal = (OneOnOneMatrix == OneOnOneMatrixOther);
+  ASSERT_EQ(1, is_equal);
+
+  OneOnOneMatrixOther = "tests/test_matrices/one_on_one_unequal.mx";
+  is_equal = (OneOnOneMatrix == OneOnOneMatrixOther);
+  ASSERT_EQ(0, is_equal);
+
+  S21Matrix ThreeOnThreeMatrix(3);
+  S21Matrix ThreeOnThreeMatrixOther(3);
+  ThreeOnThreeMatrix = "tests/test_matrices/three_on_three.mx";
+  ThreeOnThreeMatrixOther = "tests/test_matrices/three_on_three.mx";
+  is_equal = (ThreeOnThreeMatrix == ThreeOnThreeMatrixOther);
+  ASSERT_EQ(1, is_equal);
+
+  ThreeOnThreeMatrixOther = "./tests/test_matrices/three_on_three_unequal.mx";
+  is_equal = (ThreeOnThreeMatrix == ThreeOnThreeMatrixOther);
+  ASSERT_EQ(0, is_equal);
+
+  S21Matrix OneOnTwo(1, 2);
+  is_equal = (ThreeOnThreeMatrix == OneOnTwo);
+  ASSERT_EQ(0, is_equal);
+
+  is_equal = (ThreeOnThreeMatrix == ThreeOnThreeMatrix);
+  ASSERT_EQ(1, is_equal);
+}
+
+TEST(OperatorsTests, assignment) {
+  /*
+  Оператор присваивания, тестовые случаи:
+    - присваивание пустой матрице
+    - присваивание равноразмерной матрице
+    - присваивание разноразмерной матрице
+  */
+  S21Matrix ReferenceMatrix(3);
+  ReferenceMatrix = "tests/test_matrices/three_on_three.mx";
+  S21Matrix EmptyMatrix;
+  ASSERT_EQ(0, EmptyMatrix == ReferenceMatrix);
+  EmptyMatrix = ReferenceMatrix;
+  ASSERT_EQ(1, EmptyMatrix == ReferenceMatrix);
+
+  S21Matrix ThreeOnThreeMatrix(3);
+  ThreeOnThreeMatrix = ReferenceMatrix;
+  ASSERT_EQ(1, ThreeOnThreeMatrix == ReferenceMatrix);
+
+  S21Matrix OneOnOneMatrix(1);
+  OneOnOneMatrix = ReferenceMatrix;
+  ASSERT_EQ(1, OneOnOneMatrix == ReferenceMatrix);
+}
+
+TEST(LibraryTests, SumMatrix) {
+  /*
+  Суммирование, тестовые случаи:
+    - Сложение двух пустых матриц.
+    - Сложение двух единичных матриц.
+    - Сложение двух матриц с одинаковыми размерами
+  */
+
+  S21Matrix EmptyMatrix;
+  S21Matrix EmptyMatrixOther;
+  EmptyMatrix.SumMatrix(EmptyMatrixOther);
+  ASSERT_EQ(1, EmptyMatrix == EmptyMatrixOther);
+
+  S21Matrix ReferenceMatrix(3);
+  ReferenceMatrix = "tests/test_matrices/one_on_one_summ.mx";
+  S21Matrix OneOnOneMatrix(1);
+  S21Matrix OneOnOneMatrixOther(1);
+  OneOnOneMatrix = "tests/test_matrices/one_on_one.mx";
+  OneOnOneMatrixOther = "tests/test_matrices/one_on_one.mx";
+  OneOnOneMatrix.SumMatrix(OneOnOneMatrixOther);
+  ASSERT_EQ(1, OneOnOneMatrix == ReferenceMatrix);
+
+  S21Matrix ThreeOnThreeMatrix(3);
+  S21Matrix ThreeOnThreeMatrixOther(3);
+  ThreeOnThreeMatrix = "tests/test_matrices/three_on_three.mx";
+  ThreeOnThreeMatrixOther = "tests/test_matrices/three_on_three.mx";
+  ThreeOnThreeMatrix.SumMatrix(ThreeOnThreeMatrixOther);
+  ReferenceMatrix = "tests/test_matrices/three_on_three_sum.mx";
+  ASSERT_EQ(1, ThreeOnThreeMatrix == ReferenceMatrix);
+}
+
+TEST(OperatorsTests, Addition) {
+  /*
+  Суммирование, тестовые случаи:
+    - Сложение двух пустых матриц.
+    - Сложение двух единичных матриц.
+    - Сложение двух матриц с одинаковыми размерами
+  */
+  S21Matrix Result;
+  S21Matrix EmptyMatrix;
+  S21Matrix EmptyMatrixOther;
+  Result = EmptyMatrix + EmptyMatrixOther;
+  ASSERT_EQ(1, Result == EmptyMatrix);
+
+  DBG_MatrixSetConstant(0.0, Result);
+  S21Matrix ReferenceMatrix(1);
+  ReferenceMatrix = "tests/test_matrices/one_on_one_summ.mx";
+  S21Matrix OneOnOneMatrix(1);
+  S21Matrix OneOnOneMatrixOther(1);
+  OneOnOneMatrix = "tests/test_matrices/one_on_one.mx";
+  OneOnOneMatrixOther = "tests/test_matrices/one_on_one.mx";
+  Result = OneOnOneMatrix + OneOnOneMatrixOther;
+  ASSERT_EQ(1, Result == ReferenceMatrix);
+
+  DBG_MatrixSetConstant(0.0, Result);
+  ReferenceMatrix = "tests/test_matrices/three_on_three_sum.mx";
+  S21Matrix ThreeOnThreeMatrix(3);
+  S21Matrix ThreeOnThreeMatrixOther(3);
+  ThreeOnThreeMatrix = "tests/test_matrices/three_on_three.mx";
+  ThreeOnThreeMatrixOther = "tests/test_matrices/three_on_three.mx";
+  Result = ThreeOnThreeMatrix + ThreeOnThreeMatrixOther;
+  ASSERT_EQ(1, Result == ReferenceMatrix);
+}
+
+TEST(OperatorsTests, PlusEqual) {
+  S21Matrix R(3);
+  S21Matrix Y(3);
+  S21Matrix X(3);
+  S21Matrix Wrong(5);
+  DBG_MatrixSetConstant(1.5, X);
+  DBG_MatrixSetConstant(0.5, Y);
+  DBG_MatrixSetConstant(2.0, R);
+  X += Y;
+  ASSERT_EQ(1, X == R);
+}
+
+TEST(OperatorsTests, MinusEqual) {
+  S21Matrix R(3);
+  S21Matrix Y(3);
+  S21Matrix X(3);
+  S21Matrix Wrong(5);
+  DBG_MatrixSetConstant(1.5, X);
+  DBG_MatrixSetConstant(0.5, Y);
+  DBG_MatrixSetConstant(1.0, R);
+  X -= Y;
+  ASSERT_EQ(1, X == R);
+}
+
+TEST(LibraryTests, SubMatrix) {
+  /*
+  Вычитание
+    - Вычитание двух пустых матриц.
+    - Вычитание двух единичных матриц.
+    - Вычитание двух матриц с одинаковыми размерами
+  */
+
+  S21Matrix EmptyMatrix;
+  S21Matrix EmptyMatrixOther;
+  EmptyMatrix.SubMatrix(EmptyMatrixOther);
+  ASSERT_EQ(1, EmptyMatrix == EmptyMatrixOther);
+
+  S21Matrix ReferenceMatrix(1);
+  S21Matrix OneOnOneMatrix(1);
+  S21Matrix OneOnOneMatrixOther(1);
+  OneOnOneMatrix = "tests/test_matrices/one_on_one.mx";
+  OneOnOneMatrixOther = "tests/test_matrices/one_on_one.mx";
+  OneOnOneMatrix.SubMatrix(OneOnOneMatrixOther);
+  ASSERT_EQ(1, OneOnOneMatrix == ReferenceMatrix);
+
+  S21Matrix ThreeOnThreeMatrix(3);
+  S21Matrix ThreeOnThreeMatrixOther(3);
+  ReferenceMatrix.PostConstructInitializer(3);
+  ThreeOnThreeMatrix = "tests/test_matrices/three_on_three.mx";
+  ThreeOnThreeMatrixOther = "tests/test_matrices/three_on_three.mx";
+  ThreeOnThreeMatrix.SubMatrix(ThreeOnThreeMatrixOther);
+  ASSERT_EQ(1, ThreeOnThreeMatrix == ReferenceMatrix);
+}
+
+TEST(OperatorsTests, Difference) {
+  /*
+  Вычитание
+    - Вычитание двух пустых матриц.
+    - Вычитание двух единичных матриц.
+    - Вычитание двух матриц с одинаковыми размерами
+  */
+  S21Matrix Result;
+  S21Matrix ReferenceMatrix;
+  S21Matrix EmptyMatrix;
+  S21Matrix EmptyMatrixOther;
+  Result = EmptyMatrix - EmptyMatrixOther;
+  ASSERT_EQ(1, Result == ReferenceMatrix);
+
+  ReferenceMatrix.PostConstructInitializer(1, 1);
+  DBG_MatrixSetConstant(0.0, ReferenceMatrix);
+  S21Matrix OneOnOneMatrix(1);
+  S21Matrix OneOnOneMatrixOther(1);
+  OneOnOneMatrix = "tests/test_matrices/one_on_one.mx";
+  OneOnOneMatrixOther = "tests/test_matrices/one_on_one.mx";
+  Result = OneOnOneMatrix - OneOnOneMatrixOther;
+  ASSERT_EQ(1, Result == ReferenceMatrix);
+
+  ReferenceMatrix.PostConstructInitializer(3, 3);
+  DBG_MatrixSetConstant(0.0, ReferenceMatrix);
+  S21Matrix ThreeOnThreeMatrix(3);
+  S21Matrix ThreeOnThreeMatrixOther(3);
+  ThreeOnThreeMatrix = "tests/test_matrices/three_on_three.mx";
+  ThreeOnThreeMatrixOther = "tests/test_matrices/three_on_three.mx";
+  Result = ThreeOnThreeMatrix - ThreeOnThreeMatrixOther;
+  ASSERT_EQ(1, Result == ReferenceMatrix);
+}
+
+TEST(LibraryTests, MulMatrix) {
+  /*
+  Умножение двух матриц
+    - Проверка умножения двух пустых матриц
+    - Проверка умножения двух единичных матриц.
+    - Проверка умножения двух матриц с нулевыми значениями элементов.
+    - Проверка умножения двух матриц, где одна заполнена нулями.
+  */
+
+  S21Matrix EmptyMatrix;
+  S21Matrix EmptyMatrixOther;
+  EmptyMatrix.MulMatrix(EmptyMatrixOther);
+  ASSERT_EQ(1, EmptyMatrix == EmptyMatrixOther);
+
+  S21Matrix ReferenceMatrix(1);
+  DBG_MatrixSetConstant((-1.111 * -1.111), ReferenceMatrix);
+  S21Matrix OneOnOneMatrix(1);
+  S21Matrix OneOnOneMatrixOther(1);
+  OneOnOneMatrix = "tests/test_matrices/one_on_one.mx";
+  OneOnOneMatrixOther = "tests/test_matrices/one_on_one.mx";
+  OneOnOneMatrix.MulMatrix(OneOnOneMatrixOther);
+  ASSERT_EQ(1, OneOnOneMatrix == ReferenceMatrix);
+
+  ReferenceMatrix.PostConstructInitializer(3, 3);
+  ReferenceMatrix = "tests/test_matrices/three_on_three_mul.mx";
+  S21Matrix ThreeOnThreeMatrix(3);
+  S21Matrix ThreeOnThreeMatrixOther(3);
+  ThreeOnThreeMatrix = "tests/test_matrices/three_on_three.mx";
+  ThreeOnThreeMatrixOther = "tests/test_matrices/three_on_three.mx";
+  ThreeOnThreeMatrix.MulMatrix(ThreeOnThreeMatrixOther);
+  ASSERT_EQ(1, ThreeOnThreeMatrix == ReferenceMatrix);
+}
+
+TEST(OperatorsTests, Multiplication) {
+  /*
+  Умножение двух матриц
+    - Проверка умножения двух пустых матриц
+    - Проверка умножения двух единичных матриц.
+    - Проверка умножения двух матриц с нулевыми значениями элементов.
+    - Проверка умножения двух матриц, где одна заполнена нулями.
+  */
+
+  S21Matrix Result;
+  S21Matrix ReferenceMatrix;
+  S21Matrix EmptyMatrix;
+  S21Matrix EmptyMatrixOther;
+  Result = EmptyMatrix * EmptyMatrixOther;
+  ASSERT_EQ(1, Result == ReferenceMatrix);
+
+  ReferenceMatrix.PostConstructInitializer(1);
+  DBG_MatrixSetConstant((-1.111 * -1.111), ReferenceMatrix);
+  S21Matrix OneOnOneMatrix(1);
+  S21Matrix OneOnOneMatrixOther(1);
+  OneOnOneMatrix = "tests/test_matrices/one_on_one.mx";
+  OneOnOneMatrixOther = "tests/test_matrices/one_on_one.mx";
+  Result = OneOnOneMatrix * OneOnOneMatrixOther;
+  ASSERT_EQ(1, Result == ReferenceMatrix);
+
+  ReferenceMatrix.PostConstructInitializer(3, 3);
+  ReferenceMatrix = "tests/test_matrices/three_on_three_mul.mx";
+  S21Matrix ThreeOnThreeMatrix(3);
+  S21Matrix ThreeOnThreeMatrixOther(3);
+  ThreeOnThreeMatrix = "tests/test_matrices/three_on_three.mx";
+  ThreeOnThreeMatrixOther = "tests/test_matrices/three_on_three.mx";
+  Result = ThreeOnThreeMatrix * ThreeOnThreeMatrixOther;
+  ASSERT_EQ(1, Result == ReferenceMatrix);
+}
+
+TEST(OperatorsTests, MultEqual) {
+  S21Matrix ReferenceMatrix;
+  ReferenceMatrix = "tests/test_matrices/three_on_three_mul.mx";
+  S21Matrix ThreeOnThreeMatrix(3);
+  S21Matrix ThreeOnThreeMatrixOther(3);
+  ThreeOnThreeMatrix = "tests/test_matrices/three_on_three.mx";
+  ThreeOnThreeMatrixOther = "tests/test_matrices/three_on_three.mx";
+  ThreeOnThreeMatrix *= ThreeOnThreeMatrixOther;
+  ASSERT_EQ(1, ThreeOnThreeMatrix == ReferenceMatrix);
+}
+
+TEST(LibraryTests, MulNumber) {
+  /*
+  Умножение матрицы на число
+    - Умножение единичной матрицы на любое число.
+    - Умножение матрицы на отрицательное число.
+    - Умножение матрицы на ноль.
+    - Умножение матрицы на единицу.
+ */
+
+  const double x = 9.0;
+  S21Matrix ReferenceMatrix(1);
+  DBG_MatrixSetConstant((-1.111 * x), ReferenceMatrix);
+  S21Matrix OneOnOneMatrix(1);
+  OneOnOneMatrix = "tests/test_matrices/one_on_one.mx";
+  OneOnOneMatrix.MulNumber(x);
+  ASSERT_EQ(1, OneOnOneMatrix == ReferenceMatrix);
+
+  ReferenceMatrix.PostConstructInitializer(3);
+  ReferenceMatrix = "tests/test_matrices/three_on_three_mul_9.mx";
+  S21Matrix ThreeOnThreeMatrix(3);
+  ThreeOnThreeMatrix = "tests/test_matrices/three_on_three.mx";
+  ThreeOnThreeMatrix.MulNumber(x);
+  ASSERT_EQ(1, ThreeOnThreeMatrix == ReferenceMatrix);
+}
+
+TEST(LibraryTests, Transpose) {
+  /*
+ Транспонирование
+    - Транспонирование пустой матрицы.
+    - Транспонирование матрицы размером 1x1.
+    - Транспонирование квадратной матрицы.
+    - Транспонирование прямоугольной матрицы.
+ */
+
+  S21Matrix Result;
+  S21Matrix ReferenceMatrix;
+  S21Matrix EmptyMatrix;
+  Result = EmptyMatrix.Transpose();
+  ASSERT_EQ(1, Result == ReferenceMatrix);
+
+  S21Matrix OneOnOneMatrix(1);
+  DBG_MatrixSetConstant(9.9, OneOnOneMatrix);
+  ReferenceMatrix = OneOnOneMatrix;
+  Result = OneOnOneMatrix.Transpose();
+  ASSERT_EQ(1, Result == ReferenceMatrix);
+
+  S21Matrix ThreeOnThreeMatrix(3);
+  ThreeOnThreeMatrix = "tests/test_matrices/three_on_three.mx";
+  ReferenceMatrix = "tests/test_matrices/three_on_three_transpose.mx";
+  Result = ThreeOnThreeMatrix.Transpose();
+  ASSERT_EQ(1, Result == ReferenceMatrix);
+
+  S21Matrix TwoOnThreeMatrix(2, 3);
+  //  ReferenceMatrix.PostConstructInitializer(3, 2);
+  ReferenceMatrix = "tests/test_matrices/two_on_three_transpose.mx";
+  TwoOnThreeMatrix = "tests/test_matrices/two_on_three.mx";
+  Result = TwoOnThreeMatrix.Transpose();
+  ASSERT_EQ(1, Result == ReferenceMatrix);
+}
+
+TEST(LibraryTests, CalcComplements) {
+  S21Matrix Result;
+  S21Matrix ReferenceMatrix;
+  S21Matrix ThreeOnThree;
+  ThreeOnThree = "tests/test_matrices/three_on_three_for_calc_compl.mx";
+  Result = ThreeOnThree.CalcComplements();
+  ReferenceMatrix = "tests/test_matrices/three_on_three_complement.mx";
+  ASSERT_EQ(1, Result == ReferenceMatrix);
+}
+
+TEST(LibraryTests, Determinant) {
+  // Переделать функцию и проверить
+  double determinant = 0.0;
+  const double reference = 12.0;
+  S21Matrix ThreeOnThree;
+  ThreeOnThree = "tests/test_matrices/three_on_three_for_calc_compl.mx";
+  determinant = ThreeOnThree.Determinant();
+  ASSERT_EQ(1, determinant == reference);
+}
+
+TEST(LibraryTests, InverseMatrix) {
+  S21Matrix ReferenceMatrix;
+  ReferenceMatrix = "tests/test_matrices/three_on_three_inverse.mx";
+  S21Matrix ThreeOnThree;
+  ThreeOnThree = "tests/test_matrices/three_on_three_for_invers.mx";
+  S21Matrix Result;
+  Result = ThreeOnThree.InverseMatrix();
+  ASSERT_EQ(1, Result == ReferenceMatrix);
+}
+
+TEST(LibraryTests, SetNewMatrixSize) {
+  S21Matrix ThreeOnThree;
+  ThreeOnThree = "tests/test_matrices/three_on_three.mx";
+  size_t new_rows_number = 5;
+  size_t new_columns_number = 5;
+
+  S21Matrix FiveOnFive;
+  FiveOnFive = "tests/test_matrices/three_on_three_to_5_on_5.mx";
+  ThreeOnThree.SetNewMatrixSize(new_rows_number, new_columns_number);
+  ASSERT_EQ(1, ThreeOnThree == FiveOnFive);
+
+  S21Matrix TwoOnTwo;
+  TwoOnTwo = "tests/test_matrices/three_on_three_to_2_on_2.mx";
+  new_rows_number = 2;
+  new_columns_number = 2;
+  ThreeOnThree.SetNewMatrixSize(new_rows_number, new_columns_number);
+  ASSERT_EQ(1, ThreeOnThree == TwoOnTwo);
+
+  S21Matrix TwoOnThree;
+  TwoOnThree = "tests/test_matrices/three_on_three_to_2_on_3.mx";
+  new_rows_number = 2;
+  new_columns_number = 3;
+  ThreeOnThree = "tests/test_matrices/three_on_three.mx";
+  ThreeOnThree.SetNewMatrixSize(new_rows_number, new_columns_number);
+  ASSERT_EQ(1, ThreeOnThree == TwoOnThree);
+
+  S21Matrix Empty;
+  ThreeOnThree.SetNewMatrixSize(0, 0);
+  ASSERT_EQ(1, ThreeOnThree == Empty);
+}
+
+TEST(LibraryTests, GetMatrixData) {
+  S21Matrix X(2, 3);
+  ASSERT_EQ(1, 2 == X.GetRowsNumber());
+  ASSERT_EQ(1, 3 == X.GetColumnsNumber());
+}
+
+int main(int argc, char **argv) {
+  ::testing::InitGoogleTest(&argc, argv);
+  ::testing::InitGoogleMock(&argc, argv);
+  //  ::testing::GTEST_FLAG(filter) = "*SumMatrixNegative";
+  //  ::testing::GTEST_FLAG(filter) = "*GetMatrixData";
+  // ::testing::GTEST_FLAG(filter) = "*SetNewMatrixSize";
+  //  ::testing::GTEST_FLAG(filter) = "*assignment";
+  //  ::testing::GTEST_FLAG(filter) = "*SumMatrix";
+  // ::testing::GTEST_FLAG(filter) = "OperatorsTests*";
+  // ::testing::GTEST_FLAG(filter) = "*Addition";
+  // ::testing::GTEST_FLAG(filter) = "*SubMatrix";
+  //  ::testing::GTEST_FLAG(filter) = "*Difference";
+  //::testing::GTEST_FLAG(filter) = "*Mul*";
+  // ::testing::GTEST_FLAG(filter) = "*Multiplication";
+  // ::testing::GTEST_FLAG(filter) = "*MulNumber";
+  //  ::testing::GTEST_FLAG(filter) = "*Transpose";
+  //  ::testing::GTEST_FLAG(filter) = "*CalcComplements";
+  //  ::testing::GTEST_FLAG(filter) = "*DBG_MatrixFiller";
+  // ::testing::GTEST_FLAG(filter) = "*MinorCreator";
+  //  ::testing::GTEST_FLAG(filter) = "*Determinant";
+  //::testing::GTEST_FLAG(filter) = "*InverseMatrix";
+  // ::testing::GTEST_FLAG(filter) = "*MinorMatrixCreator";
+  // ::testing::GTEST_FLAG(filter) = "*Increment";
+  // ::testing::GTEST_FLAG(filter) = "*Decrement";
+  //  ::testing::GTEST_FLAG(filter) = "*MulIncrement";
+  //  ::testing::GTEST_FLAG(filter) = "*negative";
+
+  return RUN_ALL_TESTS();
+}

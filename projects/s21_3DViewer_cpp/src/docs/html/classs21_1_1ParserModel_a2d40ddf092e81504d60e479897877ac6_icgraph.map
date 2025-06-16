@@ -1,0 +1,5 @@
+<map id="s21::ParserModel::rotateZ" name="s21::ParserModel::rotateZ">
+<area shape="rect" id="Node000001" title="Поворачивает модель вокруг оси Z." alt="" coords="225,13,415,38"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1RotateZCommand.html#a53121eb9422737654433dc7ea9ea9c8b" title="Выполняет поворот модели вокруг оси Z." alt="" coords="5,5,177,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,28,178,28,178,23,211,23"/>
+</map>

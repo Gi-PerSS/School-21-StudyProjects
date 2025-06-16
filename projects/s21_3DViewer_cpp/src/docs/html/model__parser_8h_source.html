@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>3DViewer v2.0.: Исходный файл headers/model_parser.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">3DViewer v2.0.
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_7f57b1e41c5acd0e859ae5f3a2b075a9.html">headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">model_parser.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="model__parser_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef S21_MODEL_PARSER_H_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define S21_MODEL_PARSER_H_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span>s21 {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structs21_1_1ObjData.html">   26</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structs21_1_1ObjData.html">ObjData</a> {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structs21_1_1ObjData.html#a656d73018e15bac8da8c8ae2bbef44a1">   27</a></span>  std::vector&lt;double&gt; <a class="code hl_variable" href="structs21_1_1ObjData.html#a656d73018e15bac8da8c8ae2bbef44a1">vertices</a>;  </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structs21_1_1ObjData.html#a9ed1a76d61c602f332f62fcb0a62c28e">   28</a></span>  std::vector&lt;int&gt; <a class="code hl_variable" href="structs21_1_1ObjData.html#a9ed1a76d61c602f332f62fcb0a62c28e">edges</a>;  </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="structs21_1_1ObjData.html#a718a1a4440a14b0ea4fd1d269e3d4b66">   29</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="structs21_1_1ObjData.html#a718a1a4440a14b0ea4fd1d269e3d4b66">vertex_count</a>;  </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structs21_1_1ObjData.html#aa0187f7cd3492d86ca9b9d9e7c31cc8a">   30</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="structs21_1_1ObjData.html#aa0187f7cd3492d86ca9b9d9e7c31cc8a">edge_count</a>;    </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structs21_1_1ObjData.html#a63d92cf2b2ec006174b32857dcd467e7">   37</a></span>  <a class="code hl_function" href="structs21_1_1ObjData.html#a63d92cf2b2ec006174b32857dcd467e7">ObjData</a>() : <a class="code hl_variable" href="structs21_1_1ObjData.html#a718a1a4440a14b0ea4fd1d269e3d4b66">vertex_count</a>(0), <a class="code hl_variable" href="structs21_1_1ObjData.html#aa0187f7cd3492d86ca9b9d9e7c31cc8a">edge_count</a>(0) {}</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>};</div>
+</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">class </span>ModelObserver;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="};">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classs21_1_1ParserModel.html">   57</a></span><span class="keyword">class </span><a class="code hl_class" href="classs21_1_1ParserModel.html">ParserModel</a> {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <a class="code hl_struct" href="structs21_1_1ObjData.html">ObjData</a> data_;                           </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  std::vector&lt;ModelObserver*&gt; observers_;  </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordtype">double</span> scale_;  </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordtype">double</span> move_x_, move_y_, move_z_;  </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordtype">double</span> rotate_x_, rotate_y_, rotate_z_;  </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <a class="code hl_function" href="classs21_1_1ParserModel.html#a8ce6eeb01e6e6c8fe5e540e4dba96de6">ParserModel</a>();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classs21_1_1ParserModel.html#a031f3431e3d11bf66abaa2c0c60ad034">   76</a></span>  <a class="code hl_function" href="classs21_1_1ParserModel.html#a031f3431e3d11bf66abaa2c0c60ad034">~ParserModel</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1ParserModel.html#a166f7cb85545f350c5368b4f3e32751e">loadFromFile</a>(<span class="keyword">const</span> std::string&amp; file_path);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1ParserModel.html#af98f846f66e7c5be0b1fbf7b8f99ad7d">addObserver</a>(<a class="code hl_class" href="classs21_1_1ModelObserver.html">ModelObserver</a>* observer);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1ParserModel.html#a695a43ce1a22bcb79f1ba96b5bc2d0e0">removeObserver</a>(<a class="code hl_class" href="classs21_1_1ModelObserver.html">ModelObserver</a>* observer);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1ParserModel.html#ae8dfc0dc5f1ba4a99f294d02c89e1e0c">notifyObservers</a>();</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <span class="keyword">const</span> <a class="code hl_struct" href="structs21_1_1ObjData.html">ObjData</a>&amp; <a class="code hl_function" href="classs21_1_1ParserModel.html#ae9687c755a498f95481c4d45d13f2b3c">getData</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1ParserModel.html#a3a83ce6cb33a32a348f75d3207cd8865">moveX</a>(<span class="keywordtype">double</span> value);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1ParserModel.html#a5ba3ed068c6f851afd46be1fe496513e">moveY</a>(<span class="keywordtype">double</span> value);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1ParserModel.html#a12eea7cf0f0e346c86a44cf8a0b10fa4">moveZ</a>(<span class="keywordtype">double</span> value);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1ParserModel.html#a361213f979a693bf5a937cb41ba4d43c">rotateX</a>(<span class="keywordtype">double</span> angle);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1ParserModel.html#aa819e1c3009864da64c0ac530c87936c">rotateY</a>(<span class="keywordtype">double</span> angle);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1ParserModel.html#a2d40ddf092e81504d60e479897877ac6">rotateZ</a>(<span class="keywordtype">double</span> angle);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classs21_1_1ParserModel.html#aabcc508a5d37e8eca49cfe9278ca5051">scale</a>(<span class="keywordtype">double</span> ratio);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="classs21_1_1ParserModel.html#a7fc99472fa3b4157fcbb017ac5c29b1c">  169</a></span>  <span class="keywordtype">double</span> <a class="code hl_function" href="classs21_1_1ParserModel.html#a7fc99472fa3b4157fcbb017ac5c29b1c">getRotateX</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> rotate_x_; }</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="classs21_1_1ParserModel.html#a9d59dc118d0bfa719893ef496a0d104c">  176</a></span>  <span class="keywordtype">double</span> <a class="code hl_function" href="classs21_1_1ParserModel.html#a9d59dc118d0bfa719893ef496a0d104c">getRotateY</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> rotate_y_; }</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="classs21_1_1ParserModel.html#afb9753c737d87cd4cded2a9c0f4a41e3">  183</a></span>  <span class="keywordtype">double</span> <a class="code hl_function" href="classs21_1_1ParserModel.html#afb9753c737d87cd4cded2a9c0f4a41e3">getRotateZ</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> rotate_z_; }</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>};</div>
+</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>}  <span class="comment">// namespace s21</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="preprocessor">#endif  </span><span class="comment">// S21_MODEL_PARSER_H_</span></div>
+<div class="ttc" id="aclasss21_1_1ModelObserver_html"><div class="ttname"><a href="classs21_1_1ModelObserver.html">s21::ModelObserver</a></div><div class="ttdoc">Интерфейс для наблюдателей модели.</div><div class="ttdef"><b>Definition</b> observer.h:15</div></div>
+<div class="ttc" id="aclasss21_1_1ParserModel_html"><div class="ttname"><a href="classs21_1_1ParserModel.html">s21::ParserModel</a></div><div class="ttdoc">Класс для управления данными 3D-модели.</div><div class="ttdef"><b>Definition</b> model_parser.h:57</div></div>
+<div class="ttc" id="aclasss21_1_1ParserModel_html_a031f3431e3d11bf66abaa2c0c60ad034"><div class="ttname"><a href="classs21_1_1ParserModel.html#a031f3431e3d11bf66abaa2c0c60ad034">s21::ParserModel::~ParserModel</a></div><div class="ttdeci">~ParserModel()=default</div><div class="ttdoc">Деструктор класса ParserModel.</div></div>
+<div class="ttc" id="aclasss21_1_1ParserModel_html_a12eea7cf0f0e346c86a44cf8a0b10fa4"><div class="ttname"><a href="classs21_1_1ParserModel.html#a12eea7cf0f0e346c86a44cf8a0b10fa4">s21::ParserModel::moveZ</a></div><div class="ttdeci">void moveZ(double value)</div><div class="ttdoc">Перемещает модель по оси Z.</div><div class="ttdef"><b>Definition</b> model_parser.cpp:194</div></div>
+<div class="ttc" id="aclasss21_1_1ParserModel_html_a166f7cb85545f350c5368b4f3e32751e"><div class="ttname"><a href="classs21_1_1ParserModel.html#a166f7cb85545f350c5368b4f3e32751e">s21::ParserModel::loadFromFile</a></div><div class="ttdeci">void loadFromFile(const std::string &amp;file_path)</div><div class="ttdoc">Загружает данные модели из файла OBJ.</div><div class="ttdef"><b>Definition</b> model_parser.cpp:47</div></div>
+<div class="ttc" id="aclasss21_1_1ParserModel_html_a2d40ddf092e81504d60e479897877ac6"><div class="ttname"><a href="classs21_1_1ParserModel.html#a2d40ddf092e81504d60e479897877ac6">s21::ParserModel::rotateZ</a></div><div class="ttdeci">void rotateZ(double angle)</div><div class="ttdoc">Поворачивает модель вокруг оси Z.</div><div class="ttdef"><b>Definition</b> model_parser.cpp:239</div></div>
+<div class="ttc" id="aclasss21_1_1ParserModel_html_a361213f979a693bf5a937cb41ba4d43c"><div class="ttname"><a href="classs21_1_1ParserModel.html#a361213f979a693bf5a937cb41ba4d43c">s21::ParserModel::rotateX</a></div><div class="ttdeci">void rotateX(double angle)</div><div class="ttdoc">Поворачивает модель вокруг оси X.</div><div class="ttdef"><b>Definition</b> model_parser.cpp:207</div></div>
+<div class="ttc" id="aclasss21_1_1ParserModel_html_a3a83ce6cb33a32a348f75d3207cd8865"><div class="ttname"><a href="classs21_1_1ParserModel.html#a3a83ce6cb33a32a348f75d3207cd8865">s21::ParserModel::moveX</a></div><div class="ttdeci">void moveX(double value)</div><div class="ttdoc">Перемещает модель по оси X.</div><div class="ttdef"><b>Definition</b> model_parser.cpp:168</div></div>
+<div class="ttc" id="aclasss21_1_1ParserModel_html_a5ba3ed068c6f851afd46be1fe496513e"><div class="ttname"><a href="classs21_1_1ParserModel.html#a5ba3ed068c6f851afd46be1fe496513e">s21::ParserModel::moveY</a></div><div class="ttdeci">void moveY(double value)</div><div class="ttdoc">Перемещает модель по оси Y.</div><div class="ttdef"><b>Definition</b> model_parser.cpp:181</div></div>
+<div class="ttc" id="aclasss21_1_1ParserModel_html_a695a43ce1a22bcb79f1ba96b5bc2d0e0"><div class="ttname"><a href="classs21_1_1ParserModel.html#a695a43ce1a22bcb79f1ba96b5bc2d0e0">s21::ParserModel::removeObserver</a></div><div class="ttdeci">void removeObserver(ModelObserver *observer)</div><div class="ttdoc">Удаляет наблюдателя из списка.</div><div class="ttdef"><b>Definition</b> model_parser.cpp:138</div></div>
+<div class="ttc" id="aclasss21_1_1ParserModel_html_a7fc99472fa3b4157fcbb017ac5c29b1c"><div class="ttname"><a href="classs21_1_1ParserModel.html#a7fc99472fa3b4157fcbb017ac5c29b1c">s21::ParserModel::getRotateX</a></div><div class="ttdeci">double getRotateX() const</div><div class="ttdoc">Возвращает текущий угол поворота модели вокруг оси X.</div><div class="ttdef"><b>Definition</b> model_parser.h:169</div></div>
+<div class="ttc" id="aclasss21_1_1ParserModel_html_a8ce6eeb01e6e6c8fe5e540e4dba96de6"><div class="ttname"><a href="classs21_1_1ParserModel.html#a8ce6eeb01e6e6c8fe5e540e4dba96de6">s21::ParserModel::ParserModel</a></div><div class="ttdeci">ParserModel()</div><div class="ttdoc">Конструктор класса ParserModel.</div><div class="ttdef"><b>Definition</b> model_parser.cpp:27</div></div>
+<div class="ttc" id="aclasss21_1_1ParserModel_html_a9d59dc118d0bfa719893ef496a0d104c"><div class="ttname"><a href="classs21_1_1ParserModel.html#a9d59dc118d0bfa719893ef496a0d104c">s21::ParserModel::getRotateY</a></div><div class="ttdeci">double getRotateY() const</div><div class="ttdoc">Возвращает текущий угол поворота модели вокруг оси Y.</div><div class="ttdef"><b>Definition</b> model_parser.h:176</div></div>
+<div class="ttc" id="aclasss21_1_1ParserModel_html_aa819e1c3009864da64c0ac530c87936c"><div class="ttname"><a href="classs21_1_1ParserModel.html#aa819e1c3009864da64c0ac530c87936c">s21::ParserModel::rotateY</a></div><div class="ttdeci">void rotateY(double angle)</div><div class="ttdoc">Поворачивает модель вокруг оси Y.</div><div class="ttdef"><b>Definition</b> model_parser.cpp:223</div></div>
+<div class="ttc" id="aclasss21_1_1ParserModel_html_aabcc508a5d37e8eca49cfe9278ca5051"><div class="ttname"><a href="classs21_1_1ParserModel.html#aabcc508a5d37e8eca49cfe9278ca5051">s21::ParserModel::scale</a></div><div class="ttdeci">void scale(double ratio)</div><div class="ttdoc">Масштабирует модель.</div><div class="ttdef"><b>Definition</b> model_parser.cpp:257</div></div>
+<div class="ttc" id="aclasss21_1_1ParserModel_html_ae8dfc0dc5f1ba4a99f294d02c89e1e0c"><div class="ttname"><a href="classs21_1_1ParserModel.html#ae8dfc0dc5f1ba4a99f294d02c89e1e0c">s21::ParserModel::notifyObservers</a></div><div class="ttdeci">void notifyObservers()</div><div class="ttdoc">Уведомляет всех наблюдателей об изменении данных модели.</div><div class="ttdef"><b>Definition</b> model_parser.cpp:146</div></div>
+<div class="ttc" id="aclasss21_1_1ParserModel_html_ae9687c755a498f95481c4d45d13f2b3c"><div class="ttname"><a href="classs21_1_1ParserModel.html#ae9687c755a498f95481c4d45d13f2b3c">s21::ParserModel::getData</a></div><div class="ttdeci">const ObjData &amp; getData() const</div><div class="ttdoc">Возвращает текущие данные модели.</div><div class="ttdef"><b>Definition</b> model_parser.cpp:161</div></div>
+<div class="ttc" id="aclasss21_1_1ParserModel_html_af98f846f66e7c5be0b1fbf7b8f99ad7d"><div class="ttname"><a href="classs21_1_1ParserModel.html#af98f846f66e7c5be0b1fbf7b8f99ad7d">s21::ParserModel::addObserver</a></div><div class="ttdeci">void addObserver(ModelObserver *observer)</div><div class="ttdoc">Добавляет наблюдателя для уведомления об изменениях модели.</div><div class="ttdef"><b>Definition</b> model_parser.cpp:127</div></div>
+<div class="ttc" id="aclasss21_1_1ParserModel_html_afb9753c737d87cd4cded2a9c0f4a41e3"><div class="ttname"><a href="classs21_1_1ParserModel.html#afb9753c737d87cd4cded2a9c0f4a41e3">s21::ParserModel::getRotateZ</a></div><div class="ttdeci">double getRotateZ() const</div><div class="ttdoc">Возвращает текущий угол поворота модели вокруг оси Z.</div><div class="ttdef"><b>Definition</b> model_parser.h:183</div></div>
+<div class="ttc" id="astructs21_1_1ObjData_html"><div class="ttname"><a href="structs21_1_1ObjData.html">s21::ObjData</a></div><div class="ttdoc">Структура для хранения данных 3D-модели.</div><div class="ttdef"><b>Definition</b> model_parser.h:26</div></div>
+<div class="ttc" id="astructs21_1_1ObjData_html_a63d92cf2b2ec006174b32857dcd467e7"><div class="ttname"><a href="structs21_1_1ObjData.html#a63d92cf2b2ec006174b32857dcd467e7">s21::ObjData::ObjData</a></div><div class="ttdeci">ObjData()</div><div class="ttdoc">Конструктор по умолчанию.</div><div class="ttdef"><b>Definition</b> model_parser.h:37</div></div>
+<div class="ttc" id="astructs21_1_1ObjData_html_a656d73018e15bac8da8c8ae2bbef44a1"><div class="ttname"><a href="structs21_1_1ObjData.html#a656d73018e15bac8da8c8ae2bbef44a1">s21::ObjData::vertices</a></div><div class="ttdeci">std::vector&lt; double &gt; vertices</div><div class="ttdoc">Вектор вершин модели (x, y, z координаты).</div><div class="ttdef"><b>Definition</b> model_parser.h:27</div></div>
+<div class="ttc" id="astructs21_1_1ObjData_html_a718a1a4440a14b0ea4fd1d269e3d4b66"><div class="ttname"><a href="structs21_1_1ObjData.html#a718a1a4440a14b0ea4fd1d269e3d4b66">s21::ObjData::vertex_count</a></div><div class="ttdeci">int vertex_count</div><div class="ttdoc">Количество вершин в модели.</div><div class="ttdef"><b>Definition</b> model_parser.h:29</div></div>
+<div class="ttc" id="astructs21_1_1ObjData_html_a9ed1a76d61c602f332f62fcb0a62c28e"><div class="ttname"><a href="structs21_1_1ObjData.html#a9ed1a76d61c602f332f62fcb0a62c28e">s21::ObjData::edges</a></div><div class="ttdeci">std::vector&lt; int &gt; edges</div><div class="ttdoc">Вектор ребер модели (индексы вершин).</div><div class="ttdef"><b>Definition</b> model_parser.h:28</div></div>
+<div class="ttc" id="astructs21_1_1ObjData_html_aa0187f7cd3492d86ca9b9d9e7c31cc8a"><div class="ttname"><a href="structs21_1_1ObjData.html#aa0187f7cd3492d86ca9b9d9e7c31cc8a">s21::ObjData::edge_count</a></div><div class="ttdeci">int edge_count</div><div class="ttdoc">Количество ребер в модели.</div><div class="ttdef"><b>Definition</b> model_parser.h:30</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

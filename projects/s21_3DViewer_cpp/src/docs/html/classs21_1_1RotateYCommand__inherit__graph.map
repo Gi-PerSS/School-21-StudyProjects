@@ -1,0 +1,5 @@
+<map id="s21::RotateYCommand" name="s21::RotateYCommand">
+<area shape="rect" id="Node000001" title="Команда для поворота модели вокруг оси Y." alt="" coords="5,139,168,224"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1Command.html" title="Абстрактный базовый класс для всех команд." alt="" coords="28,5,145,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,104,89,138,84,138,84,104"/>
+</map>

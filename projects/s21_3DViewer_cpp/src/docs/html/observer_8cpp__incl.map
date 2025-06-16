@@ -1,0 +1,11 @@
+<map id="sources/observer.cpp" name="sources/observer.cpp">
+<area shape="rect" id="Node000001" title="Реализация компонентов, связанных с паттерном Observer." alt="" coords="5,5,164,31"/>
+<area shape="rect" id="Node000002" href="$observer_8h_source.html" title=" " alt="" coords="5,79,164,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,31,87,65,82,65,82,31"/>
+<area shape="rect" id="Node000003" href="$model__parser_8h.html" title="Заголовочный файл, содержащий объявления классов для работы с 3D&#45;моделями." alt="" coords="23,152,146,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,104,87,138,82,138,82,104"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="13,225,71,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="80,179,58,215,54,212,75,176"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="96,225,159,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="94,176,116,212,111,215,89,179"/>
+</map>

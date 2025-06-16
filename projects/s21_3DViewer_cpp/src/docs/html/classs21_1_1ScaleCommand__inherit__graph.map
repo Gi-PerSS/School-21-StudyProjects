@@ -1,0 +1,5 @@
+<map id="s21::ScaleCommand" name="s21::ScaleCommand">
+<area shape="rect" id="Node000001" title="Команда для масштабирования модели." alt="" coords="5,139,152,224"/>
+<area shape="rect" id="Node000002" href="$classs21_1_1Command.html" title="Абстрактный базовый класс для всех команд." alt="" coords="20,5,137,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,104,81,138,76,138,76,104"/>
+</map>

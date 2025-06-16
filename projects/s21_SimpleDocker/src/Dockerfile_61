@@ -1,0 +1,43 @@
+FROM nginx:1.9.5
+
+COPY ./server/fastCGI_materials.c /home/ 
+COPY ./nginx/nginx.conf /etc/nginx/
+
+RUN \
+# Установка spawn-fcgi + gcc + библиотека под fcgi
+apt-get update -y \
+&& apt install spawn-fcgi -y --fix-missing \ 
+&& apt install build-essential -y --fix-missing \
+&& apt install libfcgi-dev -y --fix-missing \
+&& apt install net-tools \
+&& apt-get install -y procps \
+# ставим пинг
+&& apt install -y iputils-ping \
+&& rm -rf /var/lib/apt/lists/* \
+# компилируем
+&& gcc /home/fastCGI_materials.c -lfcgi -o home/fastCGI_materials \
+## add permissions for nginx user
+&& chown -R nginx:nginx /var/cache/nginx \
+&& chown -R nginx:nginx /var/log/nginx  \
+&& chown -R nginx:nginx /etc/nginx/conf.d \
+&& touch /var/run/nginx.pid \
+&& chown -R nginx:nginx /var/run/nginx.pid \
+# отключение возможности запускать файлы с правами владельца
+&& chmod u-s usr/bin/passwd \
+&& chmod g-s sbin/unix_chkpwd \
+&& chmod g-s usr/bin/wall \
+&& chmod u-s usr/bin/chfn \
+&& chmod u-s usr/bin/chsh \
+&& chmod u-s bin/umount \
+&& chmod g-s usr/bin/chage \
+&& chmod u-s bin/su \
+&& chmod g-s usr/bin/expiry \
+&& chmod u-s usr/bin/gpasswd \
+&& chmod u-s usr/bin/newgrp \
+&& chmod u-s bin/mount 
+
+HEALTHCHECK --interval=5s --timeout=10s --retries=3 CMD curl -sS 127.0.0.1 || exit 1
+
+USER nginx
+
+CMD spawn-fcgi -a 127.0.0.1 -p 8080 /home/fastCGI_materials -n & nginx -g 'daemon off;'

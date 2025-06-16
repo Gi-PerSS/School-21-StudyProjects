@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>3DViewer v2.0.: Исходный файл headers/obj_data.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">3DViewer v2.0.
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_7f57b1e41c5acd0e859ae5f3a2b075a9.html">headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">obj_data.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef OBJ_DATA_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define OBJ_DATA_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span>s21 {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">struct </span>ObjData {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  std::vector&lt;double&gt; <a class="code hl_variable" href="structs21_1_1ObjData.html#a656d73018e15bac8da8c8ae2bbef44a1">vertices</a>;  </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  std::vector&lt;int&gt; <a class="code hl_variable" href="structs21_1_1ObjData.html#a9ed1a76d61c602f332f62fcb0a62c28e">edges</a>;  </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="structs21_1_1ObjData.html#a718a1a4440a14b0ea4fd1d269e3d4b66">vertex_count</a>;  </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="structs21_1_1ObjData.html#aa0187f7cd3492d86ca9b9d9e7c31cc8a">edge_count</a>;    </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structs21_1_1ObjData.html#a63d92cf2b2ec006174b32857dcd467e7">   25</a></span>  <a class="code hl_function" href="structs21_1_1ObjData.html#a63d92cf2b2ec006174b32857dcd467e7">ObjData</a>() : <a class="code hl_variable" href="structs21_1_1ObjData.html#a718a1a4440a14b0ea4fd1d269e3d4b66">vertex_count</a>(0), <a class="code hl_variable" href="structs21_1_1ObjData.html#aa0187f7cd3492d86ca9b9d9e7c31cc8a">edge_count</a>(0) {}</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}  <span class="comment">// namespace s21</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#endif  </span><span class="comment">// OBJ_DATA_H</span></div>
+<div class="ttc" id="astructs21_1_1ObjData_html_a63d92cf2b2ec006174b32857dcd467e7"><div class="ttname"><a href="structs21_1_1ObjData.html#a63d92cf2b2ec006174b32857dcd467e7">s21::ObjData::ObjData</a></div><div class="ttdeci">ObjData()</div><div class="ttdoc">Конструктор по умолчанию.</div><div class="ttdef"><b>Definition</b> obj_data.h:25</div></div>
+<div class="ttc" id="astructs21_1_1ObjData_html_a656d73018e15bac8da8c8ae2bbef44a1"><div class="ttname"><a href="structs21_1_1ObjData.html#a656d73018e15bac8da8c8ae2bbef44a1">s21::ObjData::vertices</a></div><div class="ttdeci">std::vector&lt; double &gt; vertices</div><div class="ttdoc">Вектор вершин модели (x, y, z координаты).</div><div class="ttdef"><b>Definition</b> model_parser.h:27</div></div>
+<div class="ttc" id="astructs21_1_1ObjData_html_a718a1a4440a14b0ea4fd1d269e3d4b66"><div class="ttname"><a href="structs21_1_1ObjData.html#a718a1a4440a14b0ea4fd1d269e3d4b66">s21::ObjData::vertex_count</a></div><div class="ttdeci">int vertex_count</div><div class="ttdoc">Количество вершин в модели.</div><div class="ttdef"><b>Definition</b> model_parser.h:29</div></div>
+<div class="ttc" id="astructs21_1_1ObjData_html_a9ed1a76d61c602f332f62fcb0a62c28e"><div class="ttname"><a href="structs21_1_1ObjData.html#a9ed1a76d61c602f332f62fcb0a62c28e">s21::ObjData::edges</a></div><div class="ttdeci">std::vector&lt; int &gt; edges</div><div class="ttdoc">Вектор ребер модели (индексы вершин).</div><div class="ttdef"><b>Definition</b> model_parser.h:28</div></div>
+<div class="ttc" id="astructs21_1_1ObjData_html_aa0187f7cd3492d86ca9b9d9e7c31cc8a"><div class="ttname"><a href="structs21_1_1ObjData.html#aa0187f7cd3492d86ca9b9d9e7c31cc8a">s21::ObjData::edge_count</a></div><div class="ttdeci">int edge_count</div><div class="ttdoc">Количество ребер в модели.</div><div class="ttdef"><b>Definition</b> model_parser.h:30</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
