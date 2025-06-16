@@ -19,7 +19,7 @@ Study projects completed over 2 years at **School 21**, an educational program b
 | [s21_LinuxMonitoring1](projects/s21_LinuxMonitoring1/) | Bash scripts for system and filesystem monitoring on Linux. |
 | [s21_LinuxMonitoring2](projects/s21_LinuxMonitoring2/) | Linux monitoring using Bash, GoAccess, Prometheus, and Grafana. |
 | [s21_CICD](projects/s21_CICD/) | CI/CD pipeline for SimpleBashUtils with GitLab Runner and Telegram notifications. |
-| [s21_Python_bootcamp](projects/s21_Python_bootcamp/) | Python projects: algorithms, data processing, file handling. |
+| [s21_Phython_bootcamp](projects/s21_Phython_bootcamp/) | Python projects: algorithms, data processing, file handling. |
 | [s21_PostgreSQL_bootcamp](projects/s21_PostgreSQL_bootcamp/) | SQL queries and PostgreSQL administration: JOINs, indexes, triggers, transactions. |
 
 ## About School 21
